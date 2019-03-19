@@ -74,21 +74,27 @@ gulp.task('style:build', function () {
 
 gulp.task('image:build', function () {
   gulp.src(path.src.img)
-    .pipe(imagemin({
+    /*.pipe(imagemin({
       progressive: true,
       svgoPlugins: [{removeViewBox: false}],
       use: [pngquant()],
       interlaced: true
-    }))
+    }))*/
     .pipe(gulp.dest(path.build.img))
     .pipe(reload({stream: true}));
+});
+
+gulp.task('fonts:build', function() {
+  gulp.src(path.src.fonts)
+    .pipe(gulp.dest(path.build.fonts))
 });
 
 gulp.task('build', [
   'html:build',
   'js:build',
   'style:build',
-  'image:build'
+  'image:build',
+  'fonts:build'
 ]);
 
 gulp.task('watch', function(){

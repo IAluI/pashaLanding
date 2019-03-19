@@ -229,13 +229,14 @@ body {
 }
 
 .Button {
-  /*border-radius: inherit;*/
+  display: inline-block;
   cursor: pointer;
   border: none;
   color: #ffffff;
   perspective: 350px;
   padding: 0;
   background-color: inherit;
+  user-select: none;
 }
 
 .Button:focus {
@@ -301,21 +302,18 @@ body {
   font-size: 35px;
   line-height: 55px;
   letter-spacing: 1.4px;
-  margin-left: 15px;
+  margin: 0 15px;
   padding-top: 221px;
   text-transform: uppercase;
   width: 800px;
-  /*margin-left: 330px;*/
 }
 
 .Section1-Description {
   font-size: 22px;
   line-height: 31px;
   letter-spacing: 0.9px;
-  margin-left: 15px;
-  margin-top: 6px;
+  margin: 9px 15px;
   width: 600px;
-  /*margin-left: 330px;*/
 }
 
 .Section1-Button {
@@ -327,13 +325,12 @@ body {
   line-height: 25px;
   letter-spacing: 0.8px;
   margin-left: 15px;
-  margin-top: 86px;
-  /*margin-left: 330px;*/
+  margin-top: 78px;
 }
 
 .Section2 {
-  height: 775px;
-  background: url(../img/backgroundArrow.png) 94% 12% no-repeat,
+  height: 862px;
+  background: url(../img/backgroundArrow.png) 94% 27% no-repeat,
     url(../img/backgroundArrow.png) -5% bottom no-repeat;
 }
 
@@ -346,8 +343,8 @@ body {
   width: 600px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 90px;
-  margin-left: 285px;
+  padding-top: 90px;
+  margin: 0px 285px;
 }
 
 .Section2-Description {
@@ -458,8 +455,8 @@ body {
   width: 900px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 77px;
-  margin-left: 135px;
+  padding-top: 80px;
+  margin: 0 135px;
 }
 
 .Section3-Description {
@@ -470,7 +467,7 @@ body {
   width: 830px;
   text-align: center;
   padding-top: 9px;
-  margin-left: 170px;
+  margin: 0 170px;
 }
 
 .Section3-Steps {
@@ -560,8 +557,8 @@ body {
   width: 830px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 53px;
-  margin-left: 171px;
+  padding-top: 56px;
+  margin: 0 171px;
 }
 
 .Section4-Description {
@@ -572,7 +569,7 @@ body {
   width: 830px;
   text-align: center;
   padding-top: 14px;
-  margin-left: 171px;
+  margin: 0 171px;
 }
 
 .Section4-Offers {
@@ -595,12 +592,13 @@ body {
   line-height: 28px;
   letter-spacing: 0.72px;
   padding: 24px;
+  background-color: #ffffff;
 }
 
 .Section4-OfferText:after {
   content: "";
   position: absolute;
-  bottom: -47px;
+  bottom: -44px;
   right: -21px;
   width: 84px;
   height: 30px;

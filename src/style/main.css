@@ -578,12 +578,16 @@ body {
 }
 
 .Section4-Offer {
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 69px;
 }
 
 .Section4-OfferText {
   position: relative;
-  width: 391px;
+  width: 399px;
   border-radius: 10px;
   border: 1px dashed #000000;
   font-family: Muller;
@@ -591,8 +595,9 @@ body {
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 0.72px;
-  padding: 24px;
+  padding: 20px;
   background-color: #ffffff;
+  margin-right: 47px;
 }
 
 .Section4-OfferText:after {
@@ -606,10 +611,5 @@ body {
 }
 
 .Section4-OfferImg {
-  width: 667px;
-  height: 161px;
-  position: absolute;
-  top: 0;
-  right: 30px;
   box-shadow: 0 2px 18px 3px rgba(0, 0, 0, 0.07);
 }

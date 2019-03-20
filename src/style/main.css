@@ -291,7 +291,7 @@ body {
 
 .Section1 {
   height: 722px;
-  background: url('../img/Section1Background.png') bottom center no-repeat;
+  background: url('../img/Section1Background.png') center bottom no-repeat;
   border-bottom: 1px solid #e5e5e5;
   font-family: MullerMedium;
 }
@@ -344,7 +344,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   padding-top: 90px;
-  margin: 0px 285px;
+  margin: 0 285px;
 }
 
 .Section2-Description {
@@ -443,7 +443,7 @@ body {
 
 .Section3 {
   height: 1495px;
-  background: url('../img/Section3Background.png') bottom center no-repeat;
+  background: url('../img/Section3Background.png') center bottom no-repeat;
 }
 
 .Section3-Header {
@@ -612,4 +612,530 @@ body {
 
 .Section4-OfferImg {
   box-shadow: 0 2px 18px 3px rgba(0, 0, 0, 0.07);
+}
+
+.Section5 {
+  height: 979px;
+  background: url('../img/Section5Background.png') center bottom no-repeat;
+}
+
+.Section5-Header {
+  font-family: Muller;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 1.2px;
+  width: 830px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 92px;
+  margin: 0 171px;
+}
+
+.Section5-DirectorContainer1 {
+  position: absolute;
+  left: 310px;
+  top: 351px;
+  width: 314px;
+  height: 112px;
+  border-radius: 10px;
+  padding: 9px;
+  background-color: #ffffff;
+}
+
+.Section5-DirectorContainer1:after {
+  content: "";
+  position: absolute;
+  left: -370px;
+  bottom: -498px;
+  width: 586px;
+  height: 729px;
+  background-image: url('../img/Section5Director.png');
+}
+
+.Section5-DirectorContainer2 {
+  width: 314px;
+  height: 112px;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  text-align: center;
+  font-family: Muller;
+}
+
+.Section5-DirectorName {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.96px;
+  margin-top: 26px;
+  margin-bottom: 0;
+}
+
+.Section5-DirectorPost {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.8px;
+  margin-top: 4px
+}
+
+.Section5-FormContainer {
+  position: absolute;
+  right: 47px;
+  top: 187px;
+  width: 455px;
+  text-align: center;
+  z-index: 10;
+}
+
+.Section5-FormContainerText {
+  font-family: Muller;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.72px;
+}
+
+.Section5-Form {
+  position: relative;
+  background-color: #ffffff;
+  width: 455px;
+  height: 537px;
+  box-shadow: 0 3px 13px 3px rgba(0,0,0,.08);
+  border-radius: 10px;
+  margin-top: 34px;
+}
+
+.Section5-Form:after {
+  content: "";
+  position: absolute;
+  bottom: 422px;
+  right: -60px;
+  z-index: -1;
+  width: 97px;
+  height: 120px;
+  background-image: url('../img/skypeIcon.png');
+}
+
+.Section5-FormHeader {
+  font-family: Muller;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1.08px;
+  margin: 0;
+  padding-top: 38px;
+}
+
+.Section5-FormDescription {
+  opacity: 0.6;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.64px;
+  margin: 0;
+  padding: 10px;
+  margin-bottom: 24px;
+}
+
+.Section5-FormInput {
+  display: block;
+  width: 339px;
+  height: 60px;
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
+  background-color: #f7f7f7;
+  border: none;
+  margin-left: 38px;
+  margin-bottom: 19px;
+  padding: 0 20px;
+  opacity: 0.6;
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 55px;
+  letter-spacing: 0.64px;
+}
+
+.Section5-FormInput:focus {
+  outline: none;
+}
+
+.Section5-FormSubmit {
+  width: 282px;
+  height: 74px;
+  border-radius: 10px;
+  margin-top: 42px;
+  font-family: MullerMedium;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.53px;
+  letter-spacing: 0.86px;
+}
+
+.Section6 {
+  height: 1154px;
+  background: url(../img/Section6Background.png) -2% 101% no-repeat;
+}
+
+.Section6-Header {
+  font-family: Muller;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 45px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 1000px;
+  margin: 0;
+  margin-left: 86px;
+  padding-top: 98px;
+}
+
+.Section6-Description {
+  font-family: Muller;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.72px;
+  text-align: center;
+  width: 1000px;
+  margin: 0;
+  margin-left: 86px;
+  padding-top: 14px;
+}
+
+.Section6-Cases {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 42px;
+  margin-left: 62px;
+  margin-right: 93px;
+}
+
+.Section6-Case {
+  width: 457px;
+  height: 640px;
+  box-shadow: 0 2px 18px 3px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  border: 2px solid;
+  background-position: left bottom;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.Section6-Case1 {
+  border-color: rgba(255, 0, 0, 0.3);
+  background-image: url('../img/Section6Case1Background.png');
+  background-repeat: no-repeat;
+}
+
+.Section6-Case2 {
+  border-color: rgba(57, 172, 255, 0.5);
+  background-image: url('../img/Section6Case2Background.png');
+  background-repeat: no-repeat;
+}
+
+.Section6-CaseHeader {
+  font-family: Muller;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 42px;
+  margin-bottom: 33px;
+  height: 76px;
+}
+
+.Section6-CaseText {
+  font-family: Muller;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.72px;
+  padding: 0 10px;
+  margin-left: 7px;
+}
+
+.Section6-IncreaseSales {
+  width: 405px;
+  height: 87px;
+  border-radius: 10px;
+  font-family: MullerMedium;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.72px;
+  margin-top: 68px;
+  margin-left: 383px;
+}
+
+.Section7 {
+  height: 584px;
+}
+
+.Section7-Header {
+  font-family: Muller;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 45px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 43px;
+  margin: 0;
+  margin-left: -29px;
+}
+
+.Section7-Description {
+  font-family: Muller;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.72px;
+  text-align: center;
+  padding-top: 15px;
+  margin: 0;
+  margin-left: -29px;
+}
+
+.Section7-Cases {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 45px;
+  margin-left: 5px;
+}
+
+.Section7-Case {
+  text-align: center;
+}
+
+.Section7-CaseImg {
+
+}
+
+.Section7-CaseText {
+  font-family: Muller;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.72px;
+  padding: 10px;
+  margin-top: 21px;
+}
+
+.Section8 {
+  height: 1579px;
+  background: url(../img/Section8Background1.png) -3% bottom no-repeat,
+    url(../img/Section8Background2.png) 99% 90% no-repeat;
+}
+
+.Section8-Header {
+  font-family: Muller;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 45px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 49px;
+  margin: 0;
+  margin-left: -28px;
+}
+
+.Section8-CasesContainer {
+  margin-top: 40px;
+  margin-left: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.Section8-CasesBottons {
+  display: flex;
+  flex-direction: column;
+}
+
+.Section8-CaseBottonContainer1 {
+  width: 145px;
+  height: 123px;
+  box-shadow: 0 2px 18px 3px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.Section8-CaseBottonContainer2 {
+  width: 143px;
+  height: 123px;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+}
+
+.Section8-CaseBottonImg {
+  width: inherit;
+  height: inherit;
+}
+
+.Section8-Cases {
+  /*height: 1326px;*/
+  width: 907px;
+  box-shadow: 0 2px 18px 3px rgba(0,0,0,.07);
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 31px;
+  background-color: #ffffff;
+}
+
+.Section8-Case {
+  position: relative;
+  padding-top: 252px;
+}
+
+.Section8-CaseImg {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+}
+
+.Section8-CaseHeader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: Muller;
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 45px;
+  letter-spacing: 0.76px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.Section8-ListsContainer {
+  /*margin: 0;*/
+}
+
+.Section8-ListContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 31px;
+}
+
+.Section8-ListName {
+  font-family: Muller;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 28px;
+  letter-spacing: 0.72px;
+  position: relative;
+  padding-left: 77px;
+  width: 100px;
+}
+
+.Section8-ListName:before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  width: 38px;
+  height: 0;
+  border-top: 3px solid #147ecc;;
+}
+
+.Section8-List {
+  margin: 0;
+  padding-left: 98px;
+  list-style-type: none;
+}
+
+.Section8-List_task {
+  counter-reset: taskCounter;
+}
+
+.Section8-List_solution {
+  counter-reset: soluCounter;
+}
+
+.Section8-List_result {
+  counter-reset: resuCounter;
+}
+
+.Section8-ListItem {
+  position: relative;
+  font-family: Muller;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.72px;
+  padding-bottom: 28px;
+}
+
+.Section8-ListItem_task:before {
+  position: absolute;
+  left: -54px;
+  top: -2px;
+  content: counter(taskCounter);
+  counter-increment: taskCounter;
+  width: 30px;
+  height: 30px;
+  background-color: #39acff;
+  border-radius: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-family: Muller;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.64px;
+}
+
+.Section8-ListItem_solution:before {
+  position: absolute;
+  left: -54px;
+  top: -2px;
+  content: counter(soluCounter);
+  counter-increment: soluCounter;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #39acff;
+  color: #000000;
+  text-align: center;
+  font-family: Muller;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.64px;
+}
+
+.Section8-ListItem_result:before {
+  position: absolute;
+  left: -54px;
+  top: -2px;
+  content: counter(resuCounter);
+  counter-increment: resuCounter;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 1px dashed #39acff;
+  color: #000000;
+  text-align: center;
+  font-family: Muller;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0.64px;
 }

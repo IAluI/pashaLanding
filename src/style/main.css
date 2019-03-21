@@ -22,6 +22,17 @@ body {
 
 @font-face {
   font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Medium.eot');
+  src: local('../fonts/Gilroy Medium'), local('Gilroy-Medium'),
+  url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy-Medium.woff') format('woff'),
+  url('../fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
   src: url('../fonts/Gilroy-SemiBold.eot');
   src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
     url('../fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
@@ -114,6 +125,14 @@ body {
   background-position: -15px top;
 }
 
+.Container {
+  position: relative;
+  width: 1200px;
+  /*height: 100%;*/
+  margin: auto;
+  /*margin-left: 376px;*/
+}
+
 .Header {
   width: auto;
   height: 110px;
@@ -121,14 +140,6 @@ body {
   background-color: #ffffff;
   font-family: Gilroy;
   z-index: -10;
-}
-
-.Container {
-  position: relative;
-  width: 1200px;
-  /*height: 100%;*/
-  margin: auto;
-  /*margin-left: 376px;*/
 }
 
 .Header-LogoMain {
@@ -753,7 +764,7 @@ body {
   color: #000000;
   font-family: Gilroy;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 55px;
   letter-spacing: 0.64px;
 }
@@ -886,9 +897,10 @@ body {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   text-align: center;
+  width: 1000px;
   padding-top: 43px;
   margin: 0;
-  margin-left: -29px;
+  margin-left: 86px;
 }
 
 .Section7-Description {
@@ -898,9 +910,10 @@ body {
   line-height: 28px;
   letter-spacing: 0.72px;
   text-align: center;
+  width: 1000px;
   padding-top: 15px;
   margin: 0;
-  margin-left: -29px;
+  margin-left: 86px;
 }
 
 .Section7-Cases {
@@ -910,6 +923,7 @@ body {
   align-items: flex-start;
   margin-top: 45px;
   margin-left: 5px;
+  margin-right: 13px;
 }
 
 .Section7-Case {
@@ -945,8 +959,9 @@ body {
   text-transform: uppercase;
   text-align: center;
   padding-top: 49px;
+  width: 1000px;
   margin: 0;
-  margin-left: -28px;
+  margin-left: 86px;
 }
 
 .Section8-CasesContainer {
@@ -1138,4 +1153,449 @@ body {
   font-weight: 700;
   line-height: 33px;
   letter-spacing: 0.64px;
+}
+
+.Section9 {
+  height: 614px;
+}
+
+.Section9-Header {
+  font-family: Muller;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 45px;
+  letter-spacing: 1.35px;
+  text-transform: uppercase;
+  width: 1000px;
+  text-align: center;
+  padding-top: 18px;
+  margin: 0;
+  margin-left: 85px;
+}
+
+.Section9-Description {
+  font-family: Muller;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.72px;
+  text-align: center;
+  padding-top: 15px;
+  width: 1000px;
+  margin: 0;
+  margin-left: 86px;
+}
+
+.Section9-Cases {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 45px;
+  margin-left: 5px;
+  margin-right: 13px;
+}
+
+.Section9-Case {
+  text-align: center;
+}
+
+.Section9-CaseImg {
+
+}
+
+.Section9-CaseText {
+  font-family: Muller;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.72px;
+  padding: 10px;
+  margin-top: 21px;
+}
+
+.Section10 {
+  height: 786px;
+}
+
+.Section10-Header {
+  font-family: Muller;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 45px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  width: 1000px;
+  text-align: center;
+  padding-top: 49px;
+  margin: 0;
+  margin-left: 85px;
+}
+
+.Section10-Content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.Section10-Offer {
+  position: relative;
+  font-family: Muller;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.72px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 87px;
+}
+
+.Section10-Offer:after {
+  content: "";
+  position: absolute;
+  bottom: -158px;
+  right: 3px;
+  width: 210px;
+  height: 134px;
+  background-image: url('../img/arrowMobileBig.png');
+}
+
+.Section10-Gift {
+  text-align: center;
+}
+
+.Section10-GiftImg {
+
+}
+
+.Section10-GiftText {
+  font-family: Muller;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.72px;
+  margin-top: 51px;
+}
+
+.Section11 {
+  height: 661px;
+  background: url(../img/Section11Background1.png) 17.3% 54% no-repeat;
+}
+
+.Section11-Header {
+  font-family: Muller;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 45px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 1000px;
+  padding-top: 19px;
+  margin-left: 86px;
+}
+
+.Section11-Questions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 900px;
+  list-style: none;
+  margin-top: 25px;
+  margin-left: 315px;
+  padding: 0;
+}
+
+.Section11-Question {
+  position: relative;
+  margin: 31px;
+  margin-bottom: 21px;
+  margin-top: 0;
+  border-radius: 10px;
+  /*background-color: #ffffff;*/
+  padding: 10px;
+}
+
+.Section11-Question:before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: -38px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 8px solid #39acff;
+}
+
+.Section11-QuestionHeader {
+  font-family: Muller;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.84px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.Section11-QuestionText {
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.8px;
+  margin: 0;
+  margin-top: 18px;
+}
+
+.BackgroundSection10_11 {
+  background: url(../img/Section11Background2.png) 99% 87% no-repeat;
+}
+
+.Section12 {
+  height: 815px;
+  background: url('../img/Section12Background.png') center bottom no-repeat;
+}
+
+.Section12-Header {
+  font-family: Muller;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 45px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 1000px;
+  padding-top: 24px;
+  margin: 0;
+  margin-left: 86px;
+}
+
+.Section12-Content {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.Section12-Content > * {
+  margin-bottom: 83px;
+  margin-right: 55px;
+}
+
+.Section12-ContentText {
+  font-family: Muller;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.72px;
+  /*flex: 0 0 630px;*/
+  padding-left: 15px;
+  width: 630px;
+}
+
+.Section12-ContentClients {
+  /*flex: 0 0 630px;*/
+  width: 630px;
+}
+
+.Section12-ContentClientsBig {
+  background-image: linear-gradient(to top, #34a6f8 0%, #1984d3 100%);
+  background-clip: text;
+  color: rgba(0,0,0, 0);
+  font-family: MullerBlack;
+  font-size: 309px;
+  line-height: 37.57px;
+  letter-spacing: 12px;
+  margin: 0;
+  padding-top: 130px;
+  padding-bottom: 70px;
+  padding-left: 3px;
+}
+
+.Section12-ContentClientsSmall {
+  background-image: linear-gradient(to top, #34a6f8 0%, #1984d3 100%);
+  background-clip: text;
+  color: rgba(0,0,0, 0);
+  font-family: MullerBlack;
+  font-size: 43px;
+  line-height: 37.57px;
+  letter-spacing: 1.7px;
+  margin: 0;
+  margin-top: 45px;
+  padding-left: 14px;
+}
+
+.Section12-ContentForm {
+  width: 455px;
+  height: 587px;
+  box-shadow: 0 3px 13px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.Section12-ContentFormTitle {
+  font-family: Muller;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 1.08px;
+  margin-top: 38px;
+  margin-bottom: 0;
+}
+
+.Section12-ContentFormDescription {
+  opacity: 0.6;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.64px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.Section12-ContentFormInput {
+  display: block;
+  width: 339px;
+  height: 60px;
+  box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
+  background-color: #f7f7f7;
+  border: none;
+  margin-left: 38px;
+  margin-bottom: 19px;
+  padding: 0 20px;
+  opacity: 0.6;
+  color: #000000;
+  font-family: Gilroy;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 55px;
+  letter-spacing: 0.64px;
+}
+
+.Section12-ContentFormInput:focus {
+  outline: none;
+}
+
+.Section12-ContentFormSubmit {
+  width: 282px;
+  height: 74px;
+  border-radius: 10px;
+  margin-top: 42px;
+}
+
+.Footer {
+  width: auto;
+  height: 110px;
+  box-shadow: 0 2px 18px 3px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  font-family: Gilroy;
+  z-index: -10;
+}
+
+.Footer-LogoMain {
+  width: 142px;
+  height: 65px;
+  position: absolute;
+  left: 15px;
+  top: 19px;
+}
+
+.Footer-Menu {
+  list-style: none;
+  margin: 0 0 0 209px;
+  padding: 0;
+  width: 514px;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: .7px;
+  color: #000000;
+}
+
+.Footer-Menu a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.Footer-Menu li {
+  line-height: 110px;
+}
+
+.Footer-Menu_activeItem {
+  color: #ffffff;
+  background-color: #147ecc;
+}
+
+.Footer-Menu_activeItem:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 110px solid #147ecc;
+  border-left: 45px solid transparent;
+  transform: translateX(-45px);
+}
+
+.Footer-Menu_activeItem:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-top: 110px solid #147ecc;
+  border-right: 45px solid transparent;
+}
+
+.Footer-Contacts {
+  position: absolute;
+  right: 229px;
+  top: 32px;
+}
+
+.Footer-Tel {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.Footer-Mail {
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: 800;
+  padding-left: 2px;
+  letter-spacing: 0.4px;
+}
+
+.Footer-Callback {
+  position: absolute;
+  right: 31px;
+  top: 34px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  line-height: 12.21px;
+  width: 178px;
+  height: 38px;
+  /*background-color: #b2b2b2;*/
+  border-radius: 5px;
 }

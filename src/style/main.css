@@ -133,6 +133,12 @@ body {
   /*margin-left: 376px;*/
 }
 
+section {
+  /*display: flex;
+  justify-content: space-around;*/
+  min-width: 1200px;
+}
+
 .Header {
   width: auto;
   height: 110px;
@@ -341,8 +347,8 @@ body {
 
 .Section2 {
   height: 862px;
-  background: url(../img/backgroundArrow.png) 94% 27% no-repeat,
-    url(../img/backgroundArrow.png) -5% bottom no-repeat;
+  /*background: url(../img/backgroundArrow.png) calc(50% - 698px) 547px no-repeat,
+    url(../img/backgroundArrow.png) calc(50% + 559px) 145px no-repeat;*/
 }
 
 .Section2-Header {
@@ -454,7 +460,7 @@ body {
 
 .Section3 {
   height: 1495px;
-  background: url('../img/Section3Background.png') center bottom no-repeat;
+  /*background: url('../img/Section3Background.png') center bottom no-repeat;*/
 }
 
 .Section3-Header {
@@ -548,15 +554,21 @@ body {
   margin-top: 77px;
 }
 
-.CommonBackground {
+.BackgroundSection2_3 {
   /*background: url('../img/CommonBackground.png') -847% 92% no-repeat,
     url('../img/CommonBackground.svg') 190% 92% no-repeat;*/
-  /*url('../img/CommonBackground.svg') -1211px 483px no-repeat*/;
+  /*url('../img/CommonBackground.svg') -1211px 483px no-repeat*/
+  background:
+      url(../img/backgroundArrow.png) calc(50% - 698px) 547px no-repeat,
+      url(../img/backgroundArrow.png) calc(50% + 559px) 145px no-repeat,
+      url(../img/CommonBackground.png) calc(50% + -548px) -240px no-repeat,
+      url(../img/Section3Background.png) center bottom no-repeat;
+  min-width: 1200px;
 }
 
 .Section4 {
   height: 1244px;
-  background: url('../img/Section4Background.png') left 70% no-repeat;
+  background: url(../img/Section4Background.png) calc(50% - 818px) 219px no-repeat;
 }
 
 .Section4-Header {
@@ -627,7 +639,8 @@ body {
 
 .Section5 {
   height: 979px;
-  background: url('../img/Section5Background.png') center bottom no-repeat;
+  background: url(../img/skypeIcon.png) calc(50% + 564px) 346px no-repeat,
+    url(../img/Section5Background.png) center bottom no-repeat;
 }
 
 .Section5-Header {
@@ -716,7 +729,7 @@ body {
   margin-top: 34px;
 }
 
-.Section5-Form:after {
+/*.Section5-Form:after {
   content: "";
   position: absolute;
   bottom: 422px;
@@ -725,7 +738,7 @@ body {
   width: 97px;
   height: 120px;
   background-image: url('../img/skypeIcon.png');
-}
+}*/
 
 .Section5-FormHeader {
   font-family: Muller;
@@ -787,7 +800,7 @@ body {
 
 .Section6 {
   height: 1154px;
-  background: url(../img/Section6Background.png) -2% 101% no-repeat;
+  background: url(../img/Section6Background.png) calc(50% - 495px) 288px no-repeat;
 }
 
 .Section6-Header {
@@ -946,8 +959,8 @@ body {
 
 .Section8 {
   height: 1579px;
-  background: url(../img/Section8Background1.png) -3% bottom no-repeat,
-    url(../img/Section8Background2.png) 99% 90% no-repeat;
+  background: url(../img/Section8Background1.png) calc(50% - 269px) bottom no-repeat,
+    url(../img/Section8Background2.png) calc(50% + 734px) 708px no-repeat;
 }
 
 .Section8-Header {
@@ -1282,8 +1295,42 @@ body {
 
 .Section11 {
   height: 661px;
-  background: url(../img/Section11Background1.png) 17.3% 54% no-repeat;
+  /*background: url(../img/Section11Background1.png) 17.3% 54% no-repeat;*/
+  background: url(../img/Section11Background1.png) calc(50% - 518px) 101px no-repeat;
 }
+
+/*.Section11 > .Container:after {
+  content: "";
+  position: absolute;
+  left: -86px;
+  bottom: 7px;
+  width: 1631px;
+  height: 730px;
+  background: url(../img/Section11Background1.png) left bottom no-repeat,url(../img/Section11Background2.png) right -30px no-repeat;
+  z-index: -1;
+}*/
+
+/*.Section11 > .Container:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(-86px,-7px);
+  width: 340px;
+  height: 480px;
+  background: url(../img/Section11Background1.png) left bottom no-repeat;
+}
+
+.Section11 > .Container:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(345px,-16px);
+  width: 329px;
+  height: 751px;
+  background: url(../img/Section11Background2.png) right bottom no-repeat;
+}*/
 
 .Section11-Header {
   font-family: Muller;
@@ -1303,7 +1350,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-  width: 900px;
+  width: 885px;
   list-style: none;
   margin-top: 25px;
   margin-left: 315px;
@@ -1312,11 +1359,9 @@ body {
 
 .Section11-Question {
   position: relative;
-  margin: 31px;
+  margin: 29px;
   margin-bottom: 21px;
   margin-top: 0;
-  border-radius: 10px;
-  /*background-color: #ffffff;*/
   padding: 10px;
 }
 
@@ -1352,7 +1397,7 @@ body {
 }
 
 .BackgroundSection10_11 {
-  background: url(../img/Section11Background2.png) 99% 87% no-repeat;
+  background: url(../img/Section11Background2.png) calc(50% + 780px) 627px no-repeat;
 }
 
 .Section12 {

@@ -23,25 +23,25 @@ $( document ).ready(function() {
     $(e.currentTarget).children('.Button-Front').removeClass('Button-Elem_clicked');
   });
 
-  $('.Header-DialogOne').dialog({
+  /*$('.Header-DialogOne').dialog({
     autoOpen: false,
     draggable: false,
     modal: true,
     resizable: false,
-    /*width: 555,
-    height: 593,*/
-    /*classes: {
+    /!*width: 555,
+    height: 593,*!/
+    /!*classes: {
       /!*"ui-dialog": "ui-corner-all",
       "ui-dialog-titlebar": "ui-corner-all",*!/
       "ui-widget-overlay": "DialogOverlay"
-    },*/
+    },*!/
     open: function( event, ui ) {
       $('.ui-widget-overlay').addClass('DialogOverlay');
     }
   });
   $('.Header-Callback').on('mouseup', function (e) {
     $('.Header-DialogOne').dialog('open');
-  });
+  });*/
 
   (function () {
     var answers = [];

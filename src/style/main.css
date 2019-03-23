@@ -1585,62 +1585,141 @@ div:nth-child(2n) > .Section6-Case {
 }
 
 .Section7 {
-  height: 584px;
+  text-align: center;
 }
 
 .Section7-Header {
   font-family: Muller;
-  font-size: 30px;
-  font-weight: 800;
-  line-height: 45px;
-  letter-spacing: 1.2px;
+  font-weight: 900;
+  font-size: 1.25rem;
+  line-height: 1.9167rem;
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
-  text-align: center;
-  width: 1000px;
-  padding-top: 43px;
-  margin: 0;
-  margin-left: 86px;
+  margin-top: 2.1667rem;
+  margin-bottom: 0;
 }
 
 .Section7-Description {
   font-family: Muller;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.72px;
-  text-align: center;
-  width: 1000px;
-  padding-top: 15px;
-  margin: 0;
-  margin-left: 86px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.04rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 
 .Section7-Cases {
+  margin-top: 2.5rem;
+}
+
+.Section7-Cases .slick-dots  {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-top: 45px;
-  margin-left: 5px;
-  margin-right: 13px;
+  justify-content: center;
+  font-size: 0;
+}
+
+.Section7-Cases ul > li > button{
+  font-size: 0;
+  padding: 0;
+  margin: 0 10px;
+  border: 0;
+  border-radius: 4.5px;
+  width: 9px;
+  height: 9px;
+  background-color: #b3b3b3;
+}
+
+.Section7-Cases .slick-active > button {
+  background-color: #39acff;
 }
 
 .Section7-Case {
-  text-align: center;
+
+}
+
+.Section7-CasesArrow {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -150px;
+}
+
+.Section7-CasesArrow > button:nth-child(n) {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 1.625rem;
+  border: none;
+  padding: 0;
+  background: url(../img/rightArrow.png) 50% 50% no-repeat, #39acff;
+}
+
+.Section7-CasesArrow > button:first-child {
+  transform: rotate(180deg);
+}
+
+.Section7-CasesArrow > button:last-child {
+
+}
+
+.Section7-CasesArrow > button:nth-child(n).Section7-CasesArrow_disabled {
+  background: url(../img/rightArrow.png) 50% 50% no-repeat, #c4e6ff;
 }
 
 .Section7-CaseImg {
-
+  margin: auto;
 }
 
 .Section7-CaseText {
   font-family: Muller;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.72px;
-  padding: 10px;
-  margin-top: 21px;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.04rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2.4167rem;
+}
+
+@media (min-width: 992px) {
+  .Section7 {
+    height: 584px;
+  }
+  .Section7-Header {
+    font-size: 1.6667rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.0667rem;
+    margin-top: 2.7778rem;
+    margin-bottom: 0;
+  }
+  .Section7-Description {
+    font-size: 1rem;
+    line-height: 1.5556rem;
+    letter-spacing: 0.04rem;
+    margin-top: 1.6111rem;
+    margin-bottom: 0;
+  }
+  .Section7-Cases {
+    margin-top: 2.5rem;
+  }
+  .Section7-Case {
+
+  }
+  .Section7-CasesArrow {
+    display: none;
+  }
+  .Section7-CaseImg {
+
+  }
+  .Section7-CaseText {
+    font-size: 1rem;
+    line-height: 1.5556rem;
+    letter-spacing: 0.04rem;
+    margin-top: 1.1667rem;
+    margin-bottom: 0;
+  }
 }
 
 .Section8 {

@@ -97,17 +97,9 @@ $( document ).ready(function() {
   });
   $('.Section6-CasesArrow > button:first-child').click(function () {
       $('.Section6-Cases').slick('slickPrev');
-      /*if ($('.Section6-Cases').slick('slickCurrentSlide') == 0) {
-        $('.Section6-CasesArrow > button:first-child').addClass('Section6-CasesArrow_disabled');
-      }*/
-      /*$('.Section6-CasesArrow > button:last-child').removeClass('Section6-CasesArrow_disabled');*/
   });
   $('.Section6-CasesArrow > button:last-child').click(function () {
     $('.Section6-Cases').slick('slickNext');
-    /*if ($('.Section6-Cases').slick('slickCurrentSlide') == $('.Section6-CaseContainer').length - 1) {
-      $('.Section6-CasesArrow > button:last-child').addClass('Section6-CasesArrow_disabled');
-    }*/
-    /*$('.Section6-CasesArrow > button:first-child').removeClass('Section6-CasesArrow_disabled');*/
   });
   $('.Section6-Cases').on('afterChange', function(event, slick, currentSlide){
     if (currentSlide == 0) {
@@ -119,6 +111,40 @@ $( document ).ready(function() {
       $('.Section6-CasesArrow > button:last-child').addClass('Section6-CasesArrow_disabled');
     } else {
       $('.Section6-CasesArrow > button:last-child').removeClass('Section6-CasesArrow_disabled');
+    }
+  });
+
+  $('.Section7-Cases').slick({
+    infinite: false,
+    arrows: false,
+    dots: false,
+    slidesToShow: 4,
+    adaptiveHeight: false,
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        adaptiveHeight: false,
+        dots: true
+      }
+    }]
+  });
+  $('.Section7-CasesArrow > button:first-child').click(function () {
+    $('.Section7-Cases').slick('slickPrev');
+  });
+  $('.Section7-CasesArrow > button:last-child').click(function () {
+    $('.Section7-Cases').slick('slickNext');
+  });
+  $('.Section7-Cases').on('afterChange', function(event, slick, currentSlide){
+    if (currentSlide == 0) {
+      $('.Section7-CasesArrow > button:first-child').addClass('Section7-CasesArrow_disabled');
+    } else {
+      $('.Section7-CasesArrow > button:first-child').removeClass('Section7-CasesArrow_disabled');
+    }
+    if (currentSlide == $('.Section7-Case').length - 1) {
+      $('.Section7-CasesArrow > button:last-child').addClass('Section7-CasesArrow_disabled');
+    } else {
+      $('.Section7-CasesArrow > button:last-child').removeClass('Section7-CasesArrow_disabled');
     }
   });
 

@@ -437,7 +437,7 @@ html {
 
 .Section1-Header {
   font-family: Muller;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 1.75rem;
   line-height: 2.75rem;
   letter-spacing: 0.07rem;
@@ -448,7 +448,7 @@ html {
 
 .Section1-Description {
   font-family: Muller;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.04rem;
@@ -504,7 +504,7 @@ html {
 
 .Section2-Header {
   font-family: Muller;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 1.25rem;
   line-height: 2rem;
   letter-spacing: 0.05rem;
@@ -515,7 +515,7 @@ html {
 
 .Section2-Description {
   font-family: Muller;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.04rem;
@@ -569,7 +569,7 @@ html {
 
 .Section2-Questions {
   font-family: Muller;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.0908rem;
@@ -684,7 +684,7 @@ html {
 
 .Section3-Header {
   font-family: Muller;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 1.25rem;
   line-height: 2rem;
   letter-spacing: 0.05rem;
@@ -695,6 +695,7 @@ html {
 
 .Section3-Description {
   font-family: Muller;
+  font-weight: 500;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.04rem;
@@ -733,7 +734,7 @@ html {
 
 .Section3-StepHeader {
   font-family: Muller;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1.1667rem;
   line-height: 1.5833rem;
   letter-spacing: 0.0467rem;
@@ -741,7 +742,7 @@ html {
 
 .Section3-StepText {
   font-family: Muller;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.04rem;
@@ -853,7 +854,7 @@ html {
 
 .Section4-Header {
   font-family: Muller;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 1.25rem;
   line-height: 2rem;
   letter-spacing: 0.05rem;
@@ -864,6 +865,7 @@ html {
 
 .Section4-Description {
   font-family: Muller;
+  font-weight: 500;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.04rem;
@@ -891,7 +893,7 @@ html {
 .Section4-OfferText {
   position: relative;
   font-family: Muller;
-  font-weight: 400;
+  font-weight: 500;
   text-align: left;
   border-radius: 10px;
   border: 1px dashed #999999;
@@ -1001,148 +1003,152 @@ html {
 }
 
 .Section5 {
-  height: 979px;
-  background: url(../img/skypeIcon.png) calc(50% + 564px) 346px no-repeat,
-    url(../img/Section5Background.png) center bottom no-repeat;
+  text-align: center;
+  background: url(../img/Section5Background.png) center bottom no-repeat;
 }
 
 .Section5-Header {
   font-family: Muller;
-  font-weight: 800;
-  font-size: 30px;
-  line-height: 45px;
-  letter-spacing: 1.2px;
-  width: 830px;
-  text-align: center;
+  font-weight: 900;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
-  padding-top: 92px;
-  margin: 0 171px;
+  margin-top: 1.8333rem;
+  margin-bottom: 0;
+}
+
+.Section5-Content {
+  margin-top: 1.5rem;
+  flex-direction: column-reverse;
+}
+
+.Section5-DirectorContainer0 {
+  padding: 0;
+  height: 19.9167rem;
 }
 
 .Section5-DirectorContainer1 {
-  position: absolute;
-  left: 310px;
-  top: 351px;
-  width: 314px;
-  height: 112px;
+  width: 15.75rem;
+  height: 6.1667rem;
   border-radius: 10px;
-  padding: 9px;
+  padding: 0.4167rem;
   background-color: #ffffff;
+  margin-top: 3.3333rem;
+  margin-left: auto;
 }
 
 .Section5-DirectorContainer1:after {
   content: "";
   position: absolute;
-  left: -370px;
-  bottom: -498px;
-  width: 586px;
-  height: 729px;
+  left: -2rem;
+  bottom: 0;
+  width: 14.9167rem;
+  height: 18.5567rem;
   background-image: url('../img/Section5Director.png');
+  background-size: cover;
 }
 
 .Section5-DirectorContainer2 {
-  width: 314px;
-  height: 112px;
+  width: 14.75rem;
+  height: 5.1667rem;
   border-radius: 10px;
   border: 1px solid #ececec;
-  text-align: center;
   font-family: Muller;
 }
 
 .Section5-DirectorName {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 0.96px;
-  margin-top: 26px;
+  font-weight: 900;
+  font-size: 1.0833rem;
+  line-height: 1.3283rem;
+  letter-spacing: 0.0758rem;
+  margin-top: 1.3333rem;
   margin-bottom: 0;
 }
 
 .Section5-DirectorPost {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.8px;
-  margin-top: 4px
+  font-weight: 600;
+  font-size: 0.9167rem;
+  line-height: 2.3333rem;
+  letter-spacing: 0.0667rem;
+  margin-top: 0.5rem;
 }
 
 .Section5-FormContainer {
-  position: absolute;
-  right: 47px;
-  top: 187px;
-  width: 455px;
-  text-align: center;
   z-index: 10;
 }
 
 .Section5-FormContainerText {
   font-family: Muller;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.72px;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.04rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .Section5-Form {
   position: relative;
   background-color: #ffffff;
-  width: 455px;
-  height: 537px;
   box-shadow: 0 3px 13px 3px rgba(0,0,0,.08);
   border-radius: 10px;
-  margin-top: 34px;
+  margin: 0 5px;
+  margin-top: 1.5rem;
 }
 
-/*.Section5-Form:after {
+.Section5-Form:after {
   content: "";
   position: absolute;
-  bottom: 422px;
-  right: -60px;
+  top: -1.25rem;
+  right: -1.5rem;
   z-index: -1;
-  width: 97px;
-  height: 120px;
+  width: 2.8967rem;
+  height: 3.5833rem;
   background-image: url('../img/skypeIcon.png');
-}*/
+  background-size: cover;
+}
 
 .Section5-FormHeader {
   font-family: Muller;
-  font-size: 27px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 1.08px;
-  margin: 0;
-  padding-top: 38px;
+  font-weight: 900;
+  font-size: 1.25rem;
+  line-height: 1.6667rem;
+  letter-spacing: 0.0817rem;
+  padding-top: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .Section5-FormDescription {
   opacity: 0.6;
   font-family: Gilroy;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.64px;
-  margin: 0;
-  padding: 10px;
-  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 0.8333rem;
+  line-height: 1.3333rem;
+  letter-spacing: 0.0541rem;
+  margin-top: 0.75rem;
+  margin-bottom: 2rem;
 }
 
 .Section5-FormInput {
   display: block;
-  width: 339px;
-  height: 60px;
+  width: 83.4%;
+  height: 3.1667rem;
   box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.03);
   border-radius: 6px;
   background-color: #f7f7f7;
   border: none;
-  margin-left: 38px;
-  margin-bottom: 19px;
-  padding: 0 20px;
+  padding: 0 1rem;
   opacity: 0.6;
   color: #000000;
   font-family: Gilroy;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 55px;
-  letter-spacing: 0.64px;
+  font-weight: 600;
+  font-size: 0.8333rem;
+  line-height: 2.7992rem;
+  letter-spacing: 0.0542rem;
+  margin: auto;
+  margin-bottom: 1rem;
 }
 
 .Section5-FormInput:focus {
@@ -1150,15 +1156,126 @@ html {
 }
 
 .Section5-FormSubmit {
-  width: 282px;
-  height: 74px;
-  border-radius: 10px;
-  margin-top: 42px;
+  width: 14rem;
+  height: 4rem;
+  border-radius: 5px;
   font-family: Muller;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 23.53px;
-  letter-spacing: 0.86px;
+  font-size: 0.9167rem;
+  line-height: 1.2408rem;
+  letter-spacing: 0.0692rem;
+  margin-top: 2.4167rem;
+  margin-bottom: 2.75rem;
+}
+
+@media (min-width: 992px) {
+  .Section5 {
+    /*background: url('../img/skypeIcon.png') right bottom no-repeat,
+      url(../img/Section5Background.png) center bottom no-repeat;*/
+  }
+  .Section5-Header {
+    font-size: 1.6667rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.0667rem;
+    margin-top: 5.5rem;
+    margin-bottom: 0;
+  }
+  .Section5-Content {
+    margin-top: 4.8333rem;
+    flex-direction: row;
+  }
+  .Section5-DirectorContainer0 {
+    padding: 0 15px;
+  }
+  .Section5-DirectorContainer1 {
+    width: 18.4444rem;
+    height: 7.2222rem;
+    padding: 0.5rem;
+    margin-top: 3.4444rem;
+    margin-left: 0;
+  }
+  .Section5-DirectorContainer1:after {
+    left: -19.0556rem;
+    bottom: -29.7222rem;
+    width: 32.5556rem;
+    height: 40.5rem;
+  }
+  .Section5-DirectorContainer2 {
+    width: 17.4444rem;
+    height: 6.2222rem;
+  }
+  .Section5-DirectorName {
+    font-size: 1.3333rem;
+    line-height: 1.5556rem;
+    letter-spacing: 0.0533rem;
+    margin-top: 1.6667rem;
+    margin-bottom: 0;
+  }
+  .Section5-DirectorPost {
+    font-size: 1.1111rem;
+    line-height: 1.5556rem;
+    letter-spacing: 0.0444rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+  .Section5-FormContainer {
+
+  }
+  .Section5-FormContainerText {
+    font-size: 1rem;
+    line-height: 1.5556rem;
+    letter-spacing: 0.04rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .Section5-Form {
+    margin: 0;
+    margin-top: 2.1667rem;
+    margin-bottom: 9.2778rem;
+  }
+  .Section5-Form:after {
+    content: "";
+    position: absolute;
+    top: -0.2778rem;
+    right: -3.3333rem;
+    z-index: -1;
+    width: 5.3889rem;
+    height: 6.6667rem;
+  }
+  .Section5-FormHeader {
+    font-size: 1.5rem;
+    line-height: 1.6667rem;
+    letter-spacing: 0.06rem;
+    padding-top: 2.1667rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .Section5-FormDescription {
+    font-size: 0.8889rem;
+    line-height: 1.5556rem;
+    letter-spacing: 0.0356rem;
+    margin-top: 1rem;
+    margin-bottom: 2.1667rem;
+  }
+  .Section5-FormInput {
+    width: 83.3%;
+    height: 3.3333rem;
+    font-size: 0.8889rem;
+    line-height: 3.0556rem;
+    letter-spacing: 0.0337rem;
+    padding: 0 1.1111rem;
+    margin-bottom: 1.1111rem;
+  }
+  .Section5-FormSubmit {
+    width: 15.6667rem;
+    height: 4.1111rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.3072rem;
+    letter-spacing: 0.0478rem;
+    margin-top: 3.3333rem;
+    margin-bottom: 3.6111rem;
+  }
 }
 
 .Section6 {

@@ -84,9 +84,45 @@ $( document ).ready(function() {
 
   $('.Section6-Cases').slick({
     infinite: false,
-    arrows: true,
-    slidesToShow: 1
+    arrows: false,
+    slidesToShow: 2,
+    adaptiveHeight: false,
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        adaptiveHeight: true
+      }
+    }]
   });
+  $('.Section6-CasesArrow > button:first-child').click(function () {
+      $('.Section6-Cases').slick('slickPrev');
+      /*if ($('.Section6-Cases').slick('slickCurrentSlide') == 0) {
+        $('.Section6-CasesArrow > button:first-child').addClass('Section6-CasesArrow_disabled');
+      }*/
+      /*$('.Section6-CasesArrow > button:last-child').removeClass('Section6-CasesArrow_disabled');*/
+  });
+  $('.Section6-CasesArrow > button:last-child').click(function () {
+    $('.Section6-Cases').slick('slickNext');
+    /*if ($('.Section6-Cases').slick('slickCurrentSlide') == $('.Section6-CaseContainer').length - 1) {
+      $('.Section6-CasesArrow > button:last-child').addClass('Section6-CasesArrow_disabled');
+    }*/
+    /*$('.Section6-CasesArrow > button:first-child').removeClass('Section6-CasesArrow_disabled');*/
+  });
+  $('.Section6-Cases').on('afterChange', function(event, slick, currentSlide){
+    if (currentSlide == 0) {
+      $('.Section6-CasesArrow > button:first-child').addClass('Section6-CasesArrow_disabled');
+    } else {
+      $('.Section6-CasesArrow > button:first-child').removeClass('Section6-CasesArrow_disabled');
+    }
+    if (currentSlide == $('.Section6-CaseContainer').length - 1) {
+      $('.Section6-CasesArrow > button:last-child').addClass('Section6-CasesArrow_disabled');
+    } else {
+      $('.Section6-CasesArrow > button:last-child').removeClass('Section6-CasesArrow_disabled');
+    }
+  });
+
+
 
 
   //console.log(section2Questions)

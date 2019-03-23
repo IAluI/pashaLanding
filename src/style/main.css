@@ -1426,10 +1426,38 @@ html {
   line-height: 1.5rem;
   letter-spacing: 0.04rem;
   margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 
 .Section6-Cases {
   margin-top: 2.4167rem;
+}
+
+.Section6-CasesArrow {
+  margin-top: 1.6667rem;
+}
+
+.Section6-CasesArrow > button:nth-child(n) {
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 1.625rem;
+  /*background-color: #39acff;*/
+  border: none;
+  margin: 0 3.625rem;
+  padding: 0;
+  background: url(../img/rightArrow.png) 50% 50% no-repeat, #39acff;
+}
+
+.Section6-CasesArrow > button:first-child {
+  transform: rotate(180deg);
+}
+
+.Section6-CasesArrow > button:last-child {
+
+}
+
+.Section6-CasesArrow > button:nth-child(n).Section6-CasesArrow_disabled {
+  background: url(../img/rightArrow.png) 50% 50% no-repeat, #c4e6ff;
 }
 
 .Section6-CaseContainer {
@@ -1442,6 +1470,7 @@ html {
   border: 2px solid;
   background-position: left bottom;
   background-color: #ffffff;
+  padding: 0 1.3333rem;
 }
 
 div:nth-child(2n+1) > .Section6-Case {
@@ -1459,30 +1488,35 @@ div:nth-child(2n) > .Section6-Case {
 .Section6-CaseHeader {
   font-family: Muller;
   font-weight: 800;
-  /*font-size: 25px;
-  line-height: 38px;
-  letter-spacing: 1px;*/
+  font-size: 1.3333rem;
+  line-height: 1.4841rem;
+  letter-spacing: 0.0842rem;
   text-transform: uppercase;
+  height: 3rem;
+  margin-top: 2.5833rem;
+  margin-bottom: 0;
 }
 
 .Section6-CaseText {
   font-family: Muller;
   font-weight: 500;
-  /*font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.72px;*/
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.06rem;
+  margin-top: 2.75rem;
 }
 
 .Section6-IncreaseSales {
-  /*width: 405px;
-  height: 87px;*/
+  width: 20.3333rem;
+  height: 3.9167rem;
   border-radius: 5px;
   font-family: Muller;
   font-weight: 500;
-  /*font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.72px;*/
-
+  font-size: 0.9167rem;
+  line-height: 1.2408rem;
+  letter-spacing: 0.0692rem;
+  margin-top: 3.3333rem;
+  margin-bottom: 3.3333rem;
 }
 
 @media (min-width: 992px) {
@@ -1507,6 +1541,9 @@ div:nth-child(2n) > .Section6-Case {
   }
   .Section6-Cases {
     margin-top: 2.7222rem;
+  }
+  .Section6-CasesArrow {
+    display: none;
   }
   .Section6-CaseContainer {
 

@@ -154,6 +154,15 @@ html {
   }
 }
 
+/*@media (max-width: 575px) {
+  !*.Section1-Header, .Section1-Description, .Section1-ButtonContainer {
+    padding: 0;
+  }*!
+  .row > * {
+    padding: 0;
+  }
+}*/
+
 .Header {
   box-shadow: 0 2px 18px 3px rgba(0, 0, 0, 0.05);
   background-color: #ffffff;
@@ -343,6 +352,17 @@ html {
   }
 }
 
+/*@media (max-width: 575px) {
+  .row > .Header-LogoMainContainer {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .row > .Header-Contacts {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}*/
+
 .Button {
   display: inline-block;
   cursor: pointer;
@@ -451,15 +471,6 @@ html {
   letter-spacing: 0.83px;
 }
 
-@media (max-width: 575px) {
-  /*.Section1-Header, .Section1-Description, .Section1-ButtonContainer {
-    padding: 0;
-  }*/
-  .row > * {
-    padding: 0;
-  }
-}
-
 @media (min-width: 576px) {
   .Section1 {
     background: url('../img/Section1Background.png') center bottom no-repeat;
@@ -528,8 +539,9 @@ html {
   font-size: 0.75rem;
   line-height: 1rem;
   letter-spacing: 0.0683rem;
-  margin-top: 1.5rem;
-  margin-bottom: 0;
+  opacity: 0.7;
+  padding-top: 1.5rem;
+  margin: 0;
 }
 
 .Section2-QuestionProgress {
@@ -561,6 +573,7 @@ html {
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.0908rem;
+  margin-top: 1.5rem;
 }
 
 .Section2-Question {
@@ -577,6 +590,8 @@ html {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
 }
 
 .Section2-QuestionsYes {
@@ -591,7 +606,7 @@ html {
   border-radius: 5px;
 }
 
-@media (max-width: 575px) {
+/*@media (max-width: 575px) {
   .row > .Section2-QuestionsBlockContainer {
     padding-left: 15px;
     padding-right: 15px;
@@ -599,172 +614,284 @@ html {
   .row > .Section2-Description {
     padding: 0 20px;
   }
+}*/
+
+@media (max-width: 575px) {
+  .Section2-Buttons .Button-Back {
+    box-shadow: 0 7px 12px 1px rgba(0, 96, 166, 0.3);
+  }
 }
 
 @media (min-width: 576px) {
+  .Section2-Header {
+    font-size: 1.6667rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.0667rem;
+    margin-top: 5.5rem;
+  }
+  .Section2-Description {
+    font-size: 1rem;
+    line-height: 1.6667rem;
+    letter-spacing: 0.04rem;
+    margin-top: 2rem;
+  }
+  .Section2-QuestionsBlockContainer {
+    margin-top: 4rem;
+  }
+  .Section2-QuestionNumber {
+    font-size: 1rem;
+    line-height: 1.5556rem;
+    letter-spacing: 0.04rem;
+    padding-top: 3rem;
+  }
+  .Section2-QuestionProgress {
+    border-radius: 1.5556rem;
+    height: 3.1111rem;
+    margin-top: 1.7222rem;
+  }
+  .Section2-Questions {
+    font-size: 1.3889rem;
+    line-height: 1.5556rem;
+    letter-spacing: 0.0556rem;
+    margin-top: 3.6111rem;
+  }
+  .Section2-Buttons {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .Section2-QuestionsYes {
+    width: 7.8333rem;
+    height: 4.8333rem;
+    border-radius: 10px;
+  }
+  .Section2-QuestionsNo {
+    width: 7.8333rem;
+    height: 4.8333rem;
+    border-radius: 10px;
+  }
+}
 
+@media (min-width: 1200px) {
+  .Section2-QuestionsBlockContainer {
+    padding-left: 8.3333%;
+    padding-right: 8.3333%;
+  }
 }
 
 .Section3 {
-  height: 1495px;
-  /*background: url('../img/Section3Background.png') center bottom no-repeat;*/
+  text-align: center;
 }
 
 .Section3-Header {
   font-family: Muller;
   font-weight: 800;
-  font-size: 30px;
-  line-height: 45px;
-  letter-spacing: 1.2px;
-  width: 900px;
-  text-align: center;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
-  padding-top: 80px;
-  margin: 0 135px;
+  margin-top: 5rem;
+  margin-bottom: 0;
 }
 
 .Section3-Description {
   font-family: Muller;
-  font-size: 18px;
-  line-height: 29px;
-  letter-spacing: .72px;
-  width: 830px;
-  text-align: center;
-  padding-top: 9px;
-  margin: 0 170px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.04rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 
 .Section3-Steps {
-  padding-top: 60px;
-  padding-left: 15px;
-
-
-}
-
-.Section3-Step:nth-child(2n) {
-  margin-left: 583px;
-  margin-bottom: 17px;
+  text-align: left;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 
 .Section3-Step {
   position: relative;
-  max-width: 530px;
-  margin-bottom: 19px;
+  margin-bottom: 3rem;
 }
 
 .Section3-StepNum {
   position: absolute;
-  top: 0;
-  left: 0;
-  text-align: center;
-  line-height: 70px;
   color: #ffffff;
   font-family: Muller;
   font-weight: 700;
-  font-size: 30px;
-  letter-spacing: 1.2px;
-  width: 64px;
-  height: 64px;
-  border-radius: 32px;
-  box-shadow: 0 0 52px 13px rgba(57, 172, 255, 0.55);
+  text-align: center;
   background-color: #39acff;
+  top: 0;
+  left: -3rem;
+  line-height: 3.4167rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.06rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 12px 6px rgba(57, 172, 255, 0.33);
 }
 
 .Section3-StepHeader {
   font-family: Muller;
   font-weight: 700;
-  font-size: 22px;
-  line-height: 28px;
-  letter-spacing: 0.88px;
-  margin-left: 99px;
+  font-size: 1.1667rem;
+  line-height: 1.5833rem;
+  letter-spacing: 0.0467rem;
 }
 
 .Section3-StepText {
   font-family: Muller;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.72px;
-  margin-left: 99px;
-  padding-top: 20px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.04rem;
+  margin-top: 1rem;
+}
+
+.Section3-ButtonContainer{
+  margin-bottom: 3.75rem;
 }
 
 .Section3-GetNow {
-  width: 405px;
-  height: 87px;
-  border-radius: 10px;
   font-family: Muller;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.72px;
-  margin-left: 390px;
-  margin-top: 77px;
+  width: 20.3333rem;
+  height: 3.9167rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 575px) {
+  .Section3-GetNow .Button-Back {
+    box-shadow: 0 7px 9px 1px rgba(0, 96, 166, 0.3);
+  }
+}
+
+@media (min-width: 576px) {
+  .Section3-Header {
+    font-size: 1.6667rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.0667rem;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 8.2778rem;
+    padding: 0 16.6667%;
+  }
+  .Section3-Description {
+    font-size: 1rem;
+    line-height: 1.6111rem;
+    letter-spacing: 0.04rem;
+    margin: 0;
+    margin-top: 1.5rem;
+    padding: 0 8.3333%;
+  }
+  .Section3-Steps {
+    margin-top: 3.3333rem;
+  }
+  .Section3-Step {
+    margin-bottom: 1.6rem;
+  }
+  .Section3-StepNum {
+    position: absolute;
+    top: 0;
+    left: -4.6667rem;
+    line-height: 3.8889rem;
+    font-size: 1.6667rem;
+    letter-spacing: 0.0667rem;
+    width: 3.5556rem;
+    height: 3.5556rem;
+    border-radius: 1.7778rem;
+    box-shadow: 0 0 52px 13px rgba(57, 172, 255, 0.55);
+  }
+  .Section3-StepHeader {
+    font-size: 1.2222rem;
+    line-height: 1.5556rem;
+    letter-spacing: 0.0489rem;
+  }
+  .Section3-StepText {
+    font-size: 1rem;
+    line-height: 1.5556rem;
+    letter-spacing: 0.04rem;
+    margin-top: 1.1111rem;
+  }
+  .Section3-ButtonContainer{
+    margin-top: 4.2778rem;
+    margin-bottom: 5.5rem;
+  }
+  .Section3-GetNow {
+    width: 22.5rem;
+    height: 4.8333rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.5556rem;
+    letter-spacing: 0.04rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Section3-Step:nth-child(2n) {
+    margin-left: 58.3333%;
+  }
 }
 
 .BackgroundSection2_3 {
-  background:
-      url(../img/backgroundArrow.png) calc(50% - 698px) 547px no-repeat,
-      url(../img/backgroundArrow.png) calc(50% + 559px) 145px no-repeat,
-      url(../img/CommonBackground.png) calc(50% + -548px) -240px no-repeat,
-      url(../img/Section3Background.png) center bottom no-repeat;
+  background: url(../img/Section3Background.png) center bottom no-repeat;
+}
+
+@media (min-width: 1200px) {
+  .BackgroundSection2_3 {
+    background:
+        url(../img/backgroundArrow.png) calc(50% - 698px) 547px no-repeat,
+        url(../img/backgroundArrow.png) calc(50% + 559px) 145px no-repeat,
+        url(../img/CommonBackground.png) calc(50% + -538px) -182px no-repeat,
+        url(../img/Section3Background.png) center bottom no-repeat;
+  }
 }
 
 .Section4 {
-  height: 1244px;
-  background: url(../img/Section4Background.png) calc(50% - 818px) 219px no-repeat;
+  text-align: center;
 }
 
 .Section4-Header {
   font-family: Muller;
   font-weight: 800;
-  font-size: 30px;
+  /*font-size: 30px;
   line-height: 45px;
-  letter-spacing: 1.2px;
-  width: 830px;
-  text-align: center;
+  letter-spacing: 1.2px;*/
   text-transform: uppercase;
-  padding-top: 56px;
-  margin: 0 171px;
 }
 
 .Section4-Description {
   font-family: Muller;
-  font-size: 18px;
+  /*font-size: 18px;
   line-height: 28px;
-  letter-spacing: .72px;
-  width: 830px;
-  text-align: center;
-  padding-top: 14px;
-  margin: 0 171px;
+  letter-spacing: .72px;*/
 }
 
-.Section4-Offers {
+/*.Section4-Offers {
   padding-top: 74px;
   padding-left: 15px;
-}
+}*/
 
-.Section4-Offer {
+/*.Section4-Offer {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   margin-bottom: 69px;
-}
+}*/
 
 .Section4-OfferText {
   position: relative;
-  width: 399px;
-  border-radius: 10px;
-  border: 1px dashed #000000;
   font-family: Muller;
-  font-size: 18px;
   font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.72px;
-  padding: 20px;
+  text-align: left;
+  border-radius: 10px;
+  border: 1px dashed #999999;
   background-color: #ffffff;
-  margin-right: 47px;
+  /*padding: 1.5rem;*/
+  /*font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.72px;*/
 }
 
 .Section4-OfferText:after {
@@ -779,6 +906,80 @@ html {
 
 .Section4-OfferImg {
   box-shadow: 0 2px 18px 3px rgba(0, 0, 0, 0.07);
+}
+
+@media (min-width: 576px) {
+  .Section4 {
+    background: url(../img/Section4Background.png) calc(50% - 818px) 219px no-repeat;
+  }
+
+  .Section4-Header {
+    font-size: 1.6667rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.0667rem;
+    margin-top: 3rem;
+    margin-bottom: 0;
+  }
+
+  .Section4-Description {
+    font-size: 1rem;
+    line-height: 1.5556rem;
+    letter-spacing: 0.04rem;
+    margin-top: 1.5rem;
+  }
+
+  .Section4-Offers {
+    margin-top: 4.3889rem;
+  }
+
+  /*.Section4-Offer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 69px;
+  }*/
+
+  .Section4-OfferText {
+    font-size: 1rem;
+    line-height: 1.5556rem;
+    letter-spacing: 0.04rem;
+    padding: 1.5rem;
+    margin-top: 0;
+  }
+
+  .Section4-OfferText:after {
+    content: "";
+    position: absolute;
+    bottom: -44px;
+    right: -21px;
+    width: 84px;
+    height: 30px;
+    background-image: url('../img/arrowMobile.png');
+  }
+
+  .Section4-OfferImg {
+    width: 100%;
+    height: 100%;
+    /*width="667" height="161"
+    width="668" height="314"
+     width="667" height="240"*/
+  }
+}
+
+@media (min-width: 992px) {
+  .Section4-OfferText {
+    margin-right: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Section4-Header {
+    padding: 0 16.6666%;
+  }
+  .Section4-Description {
+    padding: 0 16.6666%;
+  }
 }
 
 .Section5 {

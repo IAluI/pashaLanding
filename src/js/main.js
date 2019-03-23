@@ -49,10 +49,12 @@ $( document ).ready(function() {
     var section2Questions = $('.Section2-Questions').children();
     var widthStep = $('.Section2-QuestionProgress').width() / section2Questions.length;
 
-    /*$('.Section2-QuestionProgress').width((currentQuestion + 1) * widthStep);
-    $('.Section2-QuestionNumber').html('Вопрос ' + (currentQuestion + 1) + ' из ' + section2Questions.length);
-    $(section2Questions[currentQuestion]).addClass('Section2-Question_current');*/
-    
+    $(window).resize(function () {
+      widthStep = $('.Section2-QuestionProgress').width() / section2Questions.length;
+      currentQuestion--;
+      nextQuestion();
+    });
+
     function nextQuestion() {
       $(section2Questions[currentQuestion]).removeClass('Section2-Question_current');
       currentQuestion++;

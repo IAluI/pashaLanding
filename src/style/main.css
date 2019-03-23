@@ -854,23 +854,31 @@ html {
 .Section4-Header {
   font-family: Muller;
   font-weight: 800;
-  /*font-size: 30px;
-  line-height: 45px;
-  letter-spacing: 1.2px;*/
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
+  margin-top: 2.25rem;
+  margin-bottom: 0;
 }
 
 .Section4-Description {
   font-family: Muller;
-  /*font-size: 18px;
-  line-height: 28px;
-  letter-spacing: .72px;*/
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.04rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
 }
 
-/*.Section4-Offers {
-  padding-top: 74px;
-  padding-left: 15px;
-}*/
+.Section4-Offers {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.Section4-Offers > * {
+  margin-bottom: 2rem;
+}
 
 /*.Section4-Offer {
   display: flex;
@@ -888,31 +896,35 @@ html {
   border-radius: 10px;
   border: 1px dashed #999999;
   background-color: #ffffff;
-  /*padding: 1.5rem;*/
-  /*font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.72px;*/
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.07rem;
+  margin: 0 15px;
+  padding: 1.5rem;
 }
 
 .Section4-OfferText:after {
   content: "";
   position: absolute;
-  bottom: -44px;
-  right: -21px;
-  width: 84px;
-  height: 30px;
+  bottom: 0;
+  right: -3.5rem;
+  width: 4.2rem;
+  height: 1.5rem;
+  transform: scale(-1, 1) rotate(90deg);
   background-image: url('../img/arrowMobile.png');
+  background-size: cover;
 }
 
 .Section4-OfferImg {
+  width: 100%;
+  height: 100%;
   box-shadow: 0 2px 18px 3px rgba(0, 0, 0, 0.07);
 }
 
 @media (min-width: 576px) {
   .Section4 {
-    background: url(../img/Section4Background.png) calc(50% - 818px) 219px no-repeat;
+    background: url(../img/Section4Background.png) calc(50% - 46.6111rem) 12.5rem no-repeat
   }
-
   .Section4-Header {
     font-size: 1.6667rem;
     line-height: 2.5rem;
@@ -920,18 +932,19 @@ html {
     margin-top: 3rem;
     margin-bottom: 0;
   }
-
   .Section4-Description {
     font-size: 1rem;
     line-height: 1.5556rem;
     letter-spacing: 0.04rem;
     margin-top: 1.5rem;
   }
-
   .Section4-Offers {
     margin-top: 4.3889rem;
+    margin-bottom: 1.6667rem;
   }
-
+  .Section4-Offers > * {
+    margin-bottom: 3.8889rem;
+  }
   /*.Section4-Offer {
     display: flex;
     flex-direction: row;
@@ -939,28 +952,26 @@ html {
     align-items: flex-start;
     margin-bottom: 69px;
   }*/
-
   .Section4-OfferText {
     font-size: 1rem;
     line-height: 1.5556rem;
     letter-spacing: 0.04rem;
-    padding: 1.5rem;
     margin-top: 0;
+    margin-bottom: 0;
   }
-
   .Section4-OfferText:after {
     content: "";
     position: absolute;
-    bottom: -44px;
+    /*bottom: -44px;
     right: -21px;
     width: 84px;
-    height: 30px;
-    background-image: url('../img/arrowMobile.png');
+    height: 30px;*/
+    /*background-image: url('../img/arrowMobile.png');*/
   }
 
   .Section4-OfferImg {
-    width: 100%;
-    height: 100%;
+    /*width: 100%;
+    height: 100%;*/
     /*width="667" height="161"
     width="668" height="314"
      width="667" height="240"*/
@@ -970,6 +981,13 @@ html {
 @media (min-width: 992px) {
   .Section4-OfferText {
     margin-right: 15px;
+  }
+  .Section4-OfferText:after {
+    transform: none;
+    bottom: -44px;
+    right: -21px;
+    width: 84px;
+    height: 30px;
   }
 }
 

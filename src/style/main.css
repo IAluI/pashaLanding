@@ -1685,7 +1685,7 @@ div:nth-child(2n) > .Section6-Case {
 
 @media (min-width: 992px) {
   .Section7 {
-    height: 584px;
+
   }
   .Section7-Header {
     font-size: 1.6667rem;
@@ -1723,98 +1723,138 @@ div:nth-child(2n) > .Section6-Case {
 }
 
 .Section8 {
-  height: 1579px;
-  background: url(../img/Section8Background1.png) calc(50% - 269px) bottom no-repeat,
-    url(../img/Section8Background2.png) calc(50% + 734px) 708px no-repeat;
+  text-align: center;
 }
 
 .Section8-Header {
   font-family: Muller;
-  font-size: 30px;
-  font-weight: 800;
-  line-height: 45px;
-  letter-spacing: 1.2px;
+  font-weight: 900;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
-  text-align: center;
-  padding-top: 49px;
-  width: 1000px;
-  margin: 0;
-  margin-left: 86px;
+  margin-top: 2.5rem;
 }
 
 .Section8-CasesContainer {
-  margin-top: 40px;
-  margin-left: 14px;
   display: flex;
-  flex-direction: row;
+  /*flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: flex-start;*/
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .Section8-CasesBottons {
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  flex-direction: row;*/
 }
 
+.Section8-SliderDots {
+  margin-top: 1.25rem;
+}
+
+.Section8-SliderDots .slick-dots  {
+  /*position: absolute;
+  left: 40%;
+  bottom: -30%;*/
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 0;
+}
+
+.Section8-SliderDots ul > li > button{
+  font-size: 0;
+  padding: 0;
+  margin: 0 10px;
+  border: 0;
+  border-radius: 4.5px;
+  width: 9px;
+  height: 9px;
+  background-color: #b3b3b3;
+}
+
+.Section8-SliderDots .slick-active > button {
+  background-color: #39acff;
+}
+
+
+
 .Section8-CaseBottonContainer1 {
-  width: 145px;
-  height: 123px;
+  /*width: 5.25rem;
+  height: 4.5rem;*/
   box-shadow: 0 2px 18px 3px rgba(0, 0, 0, 0.07);
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #ffffff;
-  margin-bottom: 30px;
-  padding: 10px;
+  /*margin-bottom: 30px;*/
+  padding: 0.4167rem;
   cursor: pointer;
 }
 
 .Section8-CaseBottonContainer2 {
-  width: 143px;
-  height: 123px;
-  border-radius: 10px;
+  width: 86%;
+  height: 81.18%;
+  border-radius: 5px;
   border: 1px solid #ececec;
 }
 
 .Section8-CaseBottonImg {
-  width: inherit;
-  height: inherit;
+  width: 100%;
 }
 
 .Section8-Cases {
-  /*height: 1326px;*/
-  width: 907px;
-  box-shadow: 0 2px 18px 3px rgba(0,0,0,.07);
-  border-radius: 10px;
-  padding: 20px;
-  margin-left: 31px;
-  background-color: #ffffff;
+  position: relative;
+  margin-top: 2.3333rem;
+}
+
+.Section8-Cases > * {
+  opacity: 0;
+}
+
+.Section8-Cases > .Section8-Case_active {
+  opacity: 1;
 }
 
 .Section8-Case {
-  position: relative;
-  padding-top: 252px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0 2px 18px 3px rgba(0,0,0,.07);
+  border-radius: 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+  transition: all .3s ease;
+  padding: 10px;
+  margin: 15px;
 }
 
 .Section8-CaseImg {
+  /*width: 409px;
+  height: 261px;
   position: absolute;
   top: -15px;
-  left: -15px;
+  left: -15px;*/
+  width: 11.6667rem;
 }
 
 .Section8-CaseHeader {
-  position: absolute;
-  top: 0;
-  right: 0;
   font-family: Muller;
-  font-size: 19px;
-  font-weight: 800;
-  line-height: 45px;
-  letter-spacing: 0.76px;
-  text-align: right;
+  font-weight: 900;
   text-transform: uppercase;
+  font-size: 0.75rem;
+  line-height: 1.7617rem;
+  letter-spacing: 0.0633rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .Section8-ListsContainer {
   /*margin: 0;*/
+  text-align: left;
+  margin-top: 1.5rem;
 }
 
 .Section8-ListContainer {
@@ -1822,34 +1862,31 @@ div:nth-child(2n) > .Section6-Case {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 31px;
+  margin-bottom: 1.7222rem;
 }
 
 .Section8-ListName {
-  font-family: Muller;
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 28px;
-  letter-spacing: 0.72px;
   position: relative;
-  padding-left: 77px;
-  width: 100px;
+  font-family: Muller;
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1.0967rem;
+  letter-spacing: 0.06rem;
+  padding-left: 3rem;
 }
 
 .Section8-ListName:before {
   content: "";
   position: absolute;
-  top: 11px;
-  left: 20px;
-  width: 38px;
+  top: 0.3333rem;
+  left: 0.75rem;
+  width: 1.5833rem;
   height: 0;
-  border-top: 3px solid #147ecc;;
+  border-top: 2px solid #147ecc;
 }
 
 .Section8-List {
-  margin: 0;
-  padding-left: 98px;
-  list-style-type: none;
+  padding-left: 5.4444rem;
 }
 
 .Section8-List_task {
@@ -1867,70 +1904,249 @@ div:nth-child(2n) > .Section6-Case {
 .Section8-ListItem {
   position: relative;
   font-family: Muller;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 0.72px;
-  padding-bottom: 28px;
+  font-weight: 500;
+  font-size: 0.8333rem;
+  line-height: 1.3333rem;
+  letter-spacing: 0.0708rem;
+  padding-bottom: 1.3333rem;
 }
 
 .Section8-ListItem_task:before {
+  content: counter(taskCounter);
+  counter-increment: taskCounter;
   position: absolute;
   left: -54px;
   top: -2px;
-  content: counter(taskCounter);
-  counter-increment: taskCounter;
-  width: 30px;
-  height: 30px;
   background-color: #39acff;
-  border-radius: 15px;
   color: #ffffff;
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
   text-align: center;
   font-family: Muller;
-  font-size: 16px;
   font-weight: 700;
-  line-height: 33px;
-  letter-spacing: 0.64px;
+  font-size: 0.8333rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.0533rem;
 }
 
 .Section8-ListItem_solution:before {
+  content: counter(soluCounter);
+  counter-increment: soluCounter;
   position: absolute;
   left: -54px;
   top: -2px;
-  content: counter(soluCounter);
-  counter-increment: soluCounter;
-  width: 30px;
-  height: 30px;
-  background-color: #ffffff;
-  border-radius: 15px;
-  border: 1px solid #39acff;
-  color: #000000;
+  background-color: #39acff;
+  color: #ffffff;
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
   text-align: center;
   font-family: Muller;
-  font-size: 16px;
   font-weight: 700;
-  line-height: 33px;
-  letter-spacing: 0.64px;
+  font-size: 0.8333rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.0533rem;
 }
 
 .Section8-ListItem_result:before {
+  content: counter(resuCounter);
+  counter-increment: resuCounter;
   position: absolute;
   left: -54px;
   top: -2px;
-  content: counter(resuCounter);
-  counter-increment: resuCounter;
-  width: 30px;
-  height: 30px;
-  background-color: #ffffff;
-  border-radius: 15px;
-  border: 1px dashed #39acff;
-  color: #000000;
+  background-color: #39acff;
+  color: #ffffff;
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
   text-align: center;
   font-family: Muller;
-  font-size: 16px;
   font-weight: 700;
-  line-height: 33px;
-  letter-spacing: 0.64px;
+  font-size: 0.8333rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.0533rem;
+}
+
+@media (min-width: 992px) {
+  .Section8 {
+    background: url(../img/Section8Background1.png) calc(50% - 269px) bottom no-repeat,
+    url(../img/Section8Background2.png) calc(50% + 734px) 708px no-repeat;
+  }
+  .Section8-Header {
+    font-size: 1.6667rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.06667rem;
+    margin-top: 5.5rem;
+  }
+  .Section8-CasesContainer {
+    margin-top: 2.7778rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .Section8-SliderDots {
+    display: none;
+  }
+  .Section8-CasesBottons {/*
+    display: flex;
+    flex-direction: row;*/
+  }
+  .Section8-CaseBottonContainer1 {
+    height: 7.9444rem;
+    width: 9.1667rem;
+    border-radius: 10px;
+    margin-bottom: 1.6667rem;
+    margin-right: 0;
+    padding: 0.5556rem;
+    cursor: pointer;
+  }
+  .Section8-CaseBottonContainer2 {
+    width: 7.9444rem;
+    height: 6.8333rem;
+    border-radius: 10px;
+  }
+  .Section8-CaseBottonImg {
+
+  }
+  .Section8-Cases {
+
+  }
+  .Section8-Case {
+    padding: 1.1111rem;
+  }
+  .Section8-CaseImg {
+    position: absolute;
+    top: 45px;
+    left: 0;
+  }
+  .Section8-CaseHeader {
+    text-align: right;
+    font-size: 1.0556rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.0422rem;
+    margin-top: 1.6667rem;
+    margin-bottom: 11.0556rem;
+    position: relative;
+  }
+  .Section8-ListsContainer {
+    /*margin: 0;*/
+  }
+  .Section8-ListContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 1.7222rem;
+  }
+  .Section8-ListName {
+    font-size: 1rem;
+    line-height: 1.5556rem;
+    letter-spacing: 0.04rem;
+    padding-left: 4.3333rem;
+    width: 10rem;
+    margin-bottom: 1.7222rem;
+  }
+
+  .Section8-ListName:before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    width: 2.1111rem;
+    height: 0;
+    border-top: 3px solid #147ecc;;
+  }
+
+  .Section8-List {
+    margin: 0;
+    list-style-type: none;
+    /*padding-left: 98px;*/
+  }
+
+  .Section8-List_task {
+    counter-reset: taskCounter;
+  }
+
+  .Section8-List_solution {
+    counter-reset: soluCounter;
+  }
+
+  .Section8-List_result {
+    counter-reset: resuCounter;
+  }
+
+  .Section8-ListItem {
+    font-size: 1rem;
+    line-height: 1.5556rem;
+    letter-spacing: 0.04rem;
+    padding-bottom: 1.5556rem;
+  }
+
+  .Section8-ListItem_task:before {
+    position: absolute;
+    left: -54px;
+    top: -2px;
+    content: counter(taskCounter);
+    counter-increment: taskCounter;
+    width: 30px;
+    height: 30px;
+    background-color: #39acff;
+    border-radius: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-family: Muller;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0.64px;
+  }
+
+  .Section8-ListItem_solution:before {
+    position: absolute;
+    left: -54px;
+    top: -2px;
+    content: counter(soluCounter);
+    counter-increment: soluCounter;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #39acff;
+    color: #000000;
+    text-align: center;
+    font-family: Muller;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0.64px;
+  }
+
+  .Section8-ListItem_result:before {
+    position: absolute;
+    left: -54px;
+    top: -2px;
+    content: counter(resuCounter);
+    counter-increment: resuCounter;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 1px dashed #39acff;
+    color: #000000;
+    text-align: center;
+    font-family: Muller;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0.64px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Section8-CaseImg {
+    top: 0;
+  }
 }
 
 .Section9 {

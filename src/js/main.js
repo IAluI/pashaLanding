@@ -148,8 +148,72 @@ $( document ).ready(function() {
     }
   });
 
+  /*$('.Section8-Cases').slick({
+    infinite: true,
+    arrows: false,
+    dots: false,
+    slidesToShow: 1,
+    adaptiveHeight: false,
+    fade: true,
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        adaptiveHeight: false,
+        dots: true
+      }
+    }]
+  });
+
+  $('.Section8-CasesBottons').slick({
+    infinite: true,
+    arrows: false,
+    dots: false,
+    slidesToShow: 1,
+    adaptiveHeight: false,
+    fade: true,
+    responsive: [{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1,
+        adaptiveHeight: false,
+        dots: true
+      }
+    }]
+  });*/
+
+  var section8Cases = $('.Section8-Cases').children();
+  var curCase = 0;
+  $('.Section8-CasesBottons').children().each(function (index, item) {
+    $(item).click(function () {
+      $(section8Cases[curCase]).removeClass('Section8-Case_active');
+      curCase = index;
+      $(section8Cases[curCase]).addClass('Section8-Case_active');
+      $('.Section8-CasesBottons').slick('slickGoTo', curCase);
+    });
+  });
 
 
+  $('.Section8-CasesBottons').slick({
+    mobileFirst: true,
+    infinite: true,
+    dots: true,
+    appendDots: $('.Section8-SliderDots'),
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    responsive: [{
+      breakpoint: 992,
+      settings: 'unslick'
+    }]
+  });
 
-  //console.log(section2Questions)
+  $('.Section8-CasesBottons').on('afterChange', function(event, slick, currentSlide){
+    $(section8Cases[curCase]).removeClass('Section8-Case_active');
+    curCase = +currentSlide;
+    $(section8Cases[curCase]).addClass('Section8-Case_active');
+    console.log(currentSlide)
+  });
+
+
 });

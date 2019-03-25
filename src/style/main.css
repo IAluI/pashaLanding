@@ -2667,7 +2667,7 @@ div:nth-child(2n) > .Section6-Case {
   right: 0;
   left: 0;
   bottom: 0;
-  padding: 0 2.5rem;
+  padding: 0;
   margin: auto;
   z-index: 2000;
   display: none;
@@ -2680,7 +2680,7 @@ div:nth-child(2n) > .Section6-Case {
   box-shadow: 0 3px 13px 3px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
   background-color: #ffffff;
-  margin-top: 2.1875rem;
+  /*margin-top: 2.1875rem;*/
   text-align: center;
   padding: 2.5rem;
 }
@@ -2691,6 +2691,7 @@ div:nth-child(2n) > .Section6-Case {
   right: 30px;
   width: 12px;
   height: 12px;
+  cursor: pointer;
 }
 
 .Section12-modalFormTitle {

@@ -731,6 +731,14 @@ html {
   border-radius: 5px;
 }
 
+.Section2-GetResult {
+  font-size: 1.5rem;
+  display: none;
+  width: 15rem;
+  height: 4.8333rem;
+  border-radius: 5px;
+}
+
 /*@media (max-width: 575px) {
   .row > .Section2-QuestionsBlockContainer {
     padding-left: 15px;
@@ -1155,7 +1163,7 @@ html {
 
 .Section5-DirectorContainer1 {
   width: 15.75rem;
-  height: 6.1667rem;
+  height: 9.1667rem;
   border-radius: 10px;
   padding: 0.4167rem;
   background-color: #ffffff;
@@ -1176,7 +1184,7 @@ html {
 
 .Section5-DirectorContainer2 {
   width: 14.75rem;
-  height: 5.1667rem;
+  height: 8.1667rem;
   border-radius: 10px;
   border: 1px solid #ececec;
   font-family: Muller;
@@ -1293,6 +1301,17 @@ html {
   margin-bottom: 2.75rem;
 }
 
+@keyframes skypeRoll {
+  from {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(3rem) rotate(360deg);
+  }
+  to {
+    transform: translateX(0) rotate(0deg);
+  }
+}
 @media (min-width: 992px) {
   .Section5 {
     /*background: url('../img/skypeIcon.png') right bottom no-repeat,
@@ -1314,9 +1333,9 @@ html {
   }
   .Section5-DirectorContainer1 {
     width: 18.4444rem;
-    height: 7.2222rem;
+    height: 9.2222rem;
     padding: 0.5rem;
-    margin-top: 3.4444rem;
+    margin-top: 1rem;
     margin-left: 0;
   }
   .Section5-DirectorContainer1:after {
@@ -1327,7 +1346,7 @@ html {
   }
   .Section5-DirectorContainer2 {
     width: 17.4444rem;
-    height: 6.2222rem;
+    height: 8.2222rem;
   }
   .Section5-DirectorName {
     font-size: 1.3333rem;
@@ -1366,6 +1385,7 @@ html {
     z-index: -1;
     width: 5.3889rem;
     height: 6.6667rem;
+    animation: skypeRoll 15s infinite;
   }
   .Section5-FormHeader {
     font-size: 1.5rem;
@@ -3094,3 +3114,4 @@ div:nth-child(2n) > .Section6-Case {
     font-size: 15px!important;
   }
 }
+

@@ -76,9 +76,12 @@ $( document ).ready(function() {
       $('.Section2-QuestionProgressCurrent').width((currentQuestion + 1) * widthStep);
       $('.Section2-QuestionNumber').html('Вопрос ' + (currentQuestion + 1) + ' из ' + section2Questions.length);
       $(section2Questions[currentQuestion]).addClass('Section2-Question_current');
-      if (section2Questions.length - 1 == currentQuestion) {
-        callModal();
-      }
+      /*if (section2Questions.length - 1 == currentQuestion) {
+        /!*callModal();*!/
+        /!*$('.Section2-QuestionsYes').hide();
+        $('.Section2-QuestionsNo').hide();
+        $('.Section2-GetResult').css('display', 'block');*!/
+      }*/
     }
     nextQuestion();
     
@@ -86,12 +89,20 @@ $( document ).ready(function() {
       if (currentQuestion < section2Questions.length - 1) {
         answers.push(1);
         nextQuestion();
+      } else {
+        $('.Section2-QuestionsYes').hide();
+        $('.Section2-QuestionsNo').hide();
+        $('.Section2-GetResult').css('display', 'block');
       }
     });
     $('.Section2-QuestionsNo').click(function () {
       if (currentQuestion < section2Questions.length - 1) {
         answers.push(0);
         nextQuestion();
+      } else {
+        $('.Section2-QuestionsYes').hide();
+        $('.Section2-QuestionsNo').hide();
+        $('.Section2-GetResult').css('display', 'block');
       }
     });
   })();
@@ -323,6 +334,8 @@ $( document ).ready(function() {
   $('.Section6-IncreaseSales').on('click', callModal);
 
   $('.footer-Callback').on('click', callModal);
+
+  $('.Section2-GetResult').on('click', callModal);
 
   $(document).mouseup(function (e){ // событие клика по веб-документу
     var div = $(".modal"); // тут указываем ID элемента

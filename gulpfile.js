@@ -15,6 +15,7 @@ let gulp = require('gulp'),
 const path = {
   build: {
     html: 'build/',
+    php: 'build/',
     js: 'build/js/',
     css: 'build/css/',
     img: 'build/img/',
@@ -22,6 +23,7 @@ const path = {
   },
   src: {
     html: 'src/*.html',
+    php: 'src/*.php',
     js: 'src/js/main.js',
     style: 'src/style/main.css',
     img: 'src/img/**/*.*',
@@ -29,6 +31,7 @@ const path = {
   },
   watch: {
     html: 'src/**/*.html',
+    php: 'src/*.php',
     js: 'src/js/**/*.js',
     style: 'src/style/**/*.css',
     img: 'src/img/**/*.*',
@@ -53,6 +56,12 @@ gulp.task('html:build', function () {
     .pipe(reload({stream: true}));
 });
 
+gulp.task('php:build', function () {
+  gulp.src(path.src.php)
+    .pipe(gulp.dest(path.build.php))
+    .pipe(reload({stream: true}));
+});
+
 gulp.task('js:build', function () {
   gulp.src(path.src.js)
     .pipe(sourcemaps.init())
@@ -74,12 +83,12 @@ gulp.task('style:build', function () {
 
 gulp.task('image:build', function () {
   gulp.src(path.src.img)
-    /*.pipe(imagemin({
+    .pipe(imagemin({
       progressive: true,
       svgoPlugins: [{removeViewBox: false}],
       use: [pngquant()],
       interlaced: true
-    }))*/
+    }))
     .pipe(gulp.dest(path.build.img))
     .pipe(reload({stream: true}));
 });
@@ -91,6 +100,7 @@ gulp.task('fonts:build', function() {
 
 gulp.task('build', [
   'html:build',
+  'php:build',
   'js:build',
   'style:build',
   'image:build',
@@ -100,6 +110,9 @@ gulp.task('build', [
 gulp.task('watch', function(){
   watch([path.watch.html], function(event, cb) {
     gulp.start('html:build');
+  });
+  watch([path.watch.php], function(event, cb) {
+    gulp.start('php:build');
   });
   watch([path.watch.js], function(event, cb) {
     gulp.start('js:build');

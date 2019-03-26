@@ -996,15 +996,16 @@ html {
 
 .BackgroundSection2_3 {
   background: url(../img/Section3Background.png) center bottom no-repeat;
+  background-size: contain;
 }
 
 @media (min-width: 1200px) {
-  .BackgroundSection2_3 {
+  .BackgroundSection2_3-1 {
     background:
         url(../img/backgroundArrow.png) calc(50% - 698px) 547px no-repeat,
         url(../img/backgroundArrow.png) calc(50% + 559px) 145px no-repeat,
-        url(../img/CommonBackground.png) calc(50% + -538px) -182px no-repeat,
-        url(../img/Section3Background.png) center bottom no-repeat;
+        url(../img/CommonBackground.png) calc(50% + -538px) -182px no-repeat;
+
   }
 }
 
@@ -1085,7 +1086,7 @@ html {
 
 @media (min-width: 576px) {
   .Section4 {
-    background: url(../img/Section4Background.png) calc(50% - 46.6111rem) 12.5rem no-repeat
+    /*background: url(../img/Section4Background.png) left 12.5rem no-repeat;*/
   }
   .Section4-Header {
     font-size: 1.6667rem;
@@ -1141,6 +1142,9 @@ html {
 }
 
 @media (min-width: 992px) {
+  .Section4 {
+    background: url(../img/Section4Background.png) left 12.5rem no-repeat;
+  }
   .Section4-OfferText {
     margin-right: 15px;
   }
@@ -2020,8 +2024,10 @@ div:nth-child(2n) > .Section6-Case {
 
 @media (min-width: 992px) {
   .Section8 {
-    background: url(../img/Section8Background1.png) left bottom no-repeat,
-      url(../img/Section8Background2.png) right 39rem no-repeat;
+    /*background: url(../img/Section8Background1.png) left bottom no-repeat,
+      url(../img/Section8Background2.png) right 39rem no-repeat;*/
+    background: url(../img/Section8Background1.png) left 466px no-repeat,
+      url(../img/Section8Background2.png) right 700px no-repeat;
   }
   .Section8-Header {
     font-size: 1.6667rem;
@@ -2206,6 +2212,126 @@ div:nth-child(2n) > .Section6-Case {
   .Section8-List {
     width: 80%;
   }
+}
+
+.Section8-1 {
+
+}
+
+.Section8-1-Header {
+  font-family: Muller;
+  font-weight: 900;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.Section8-1-Description {
+  font-family: Muller;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.04rem;
+  text-align: center;
+  margin: 0;
+  margin-top: 1.5rem;
+}
+
+.Section8-1-Table {
+  font-family: Muller;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5556rem;
+  letter-spacing: 0.04rem;
+  text-align: center;
+  background-color: #ffffff;
+  margin-top: 2.2222rem;
+  margin-bottom: 5.5556rem;
+  border-collapse: collapse;
+}
+
+.Section8-1-Table > tbody td {
+  border: 1px solid #e5e5e5;
+  padding: 1rem 1.5rem;
+}
+
+.Section8-1-Table > thead th {
+  border-radius: 10px 10px 0 0;
+}
+
+.Section8-1-Table > thead th:nth-child(2) {
+  box-shadow: inset 0 1px 0 0 #6f6f6f,
+    inset -1px 0 0 #6f6f6f,
+    inset 1px 0 0 #6f6f6f;
+}
+
+.Section8-1-Table > thead th:nth-child(3) {
+  color: #ffffff;
+  background-color: #33a5f7;
+}
+
+.Section8-1-Table > thead th:nth-child(4) {;
+  background-color: #ffdd23;
+}
+
+.Section8-1-Table td:last-child {
+  width: 5px;
+  border-right: none;
+  border-left: none;
+  padding: 0;
+}
+
+.Section8-1-Table > tbody {
+  box-shadow: 0 3px 13px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.Section8-1-Table > tbody > tr:last-child {
+  font-weight: 700;
+  font-size: 1.3889rem;
+  letter-spacing: 0.0556rem;
+}
+
+.Section8-1-Table td:first-child {
+  text-align: left;
+  border-left: none;
+}
+
+.Section8-1-Table > tbody > tr:first-child td {
+  border-top: none;
+}
+
+.Section8-1-Table > tbody > tr:last-child td {
+  border-bottom: none;
+}
+
+.Section8-1-Table > tbody td:nth-child(4) {
+  border-right: none;
+}
+
+@media (max-width: 768px) {
+  .Section8-1-Table {
+    font-size: .5rem;
+    line-height: 1.3333em;
+    letter-spacing: .04em;
+    padding: 0;
+  }
+  .Section8-1-Table > tbody > tr:last-child {
+    font-size: 1em;
+  }
+  .Section8-1-Table>tbody td {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+.Section8-1-TableHeader {
+
+}
+
+.Section8-1-TableFooter {
 
 }
 

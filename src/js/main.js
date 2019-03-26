@@ -215,7 +215,11 @@ $( document ).ready(function() {
     });
   });
 
-
+  var sec8SlickIsDestroyed = false;
+  $('.Section8-CasesBottons').on('destroy', function(event, slick){
+    sec8SlickIsDestroyed = true;
+    console.log('slick destroyed')
+  });
   $('.Section8-CasesBottons').slick({
     mobileFirst: true,
     infinite: true,
@@ -228,10 +232,6 @@ $( document ).ready(function() {
       breakpoint: 992,
       settings: 'unslick'
     }]
-  });
-  var sec8SlickIsDestroyed = false;
-  $('.Section8-CasesBottons').on('destroy', function(event, slick){
-    sec8SlickIsDestroyed = true;
   });
 
   $(window).resize($.debounce(250, function () {

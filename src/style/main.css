@@ -238,18 +238,6 @@ body.compensate-for-scrollbar{overflow:hidden}.fancybox-active{height:auto}.fanc
   font-style: normal;
 }
 
-.DesktopSample {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 1920px;
-  height: 11731px;
-  opacity: 1;
-  z-index: -1000;
-  background-image: url('../img/desktopSample.png');
-  background-position: left top;
-}
-
 body {
   position: relative;
   margin: 0;
@@ -2215,7 +2203,7 @@ div:nth-child(2n) > .Section6-Case {
 }
 
 .Section8-1 {
-
+  margin-bottom: 5.5556rem;
 }
 
 .Section8-1-Header {
@@ -2249,7 +2237,7 @@ div:nth-child(2n) > .Section6-Case {
   text-align: center;
   background-color: #ffffff;
   margin-top: 2.2222rem;
-  margin-bottom: 5.5556rem;
+  /*margin-bottom: 5.5556rem;*/
   border-collapse: collapse;
 }
 
@@ -2318,6 +2306,8 @@ div:nth-child(2n) > .Section6-Case {
     line-height: 1.3333em;
     letter-spacing: .04em;
     padding: 0;
+    /*display: block;
+    overflow-x: auto;*/
   }
   .Section8-1-Table > tbody > tr:last-child {
     font-size: 1em;
@@ -2676,7 +2666,7 @@ div:nth-child(2n) > .Section6-Case {
     letter-spacing: 0.0667rem;
   }
   .Section11-img {
-    display: inline;
+    /*display: inline;*/
     margin-top: 3.8889rem;
     display: flex;
     align-items: center
@@ -2718,9 +2708,7 @@ div:nth-child(2n) > .Section6-Case {
 }
 
 .BackgroundSection10_11 {
-  background: url(../img/Section11Background2.png) no-repeat;
-  background-repeat: no-repeat;
-  background-position: right bottom;
+  background: url(../img/Section11Background2.png) right bottom no-repeat;
 }
 
 .Section12 {
@@ -2860,7 +2848,7 @@ div:nth-child(2n) > .Section6-Case {
   top: 10vh;
   right: 5vh;
   left: 5vh;
-  bottom: 0;
+  /*bottom: 0;*/
   margin: auto;
   z-index: 2000;
   display: none;
@@ -2881,8 +2869,8 @@ div:nth-child(2n) > .Section6-Case {
 
 .Section12-modalFormClose {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 1.5rem;
+  right: 1.5rem;
   width: 12px;
   height: 12px;
   cursor: pointer;
@@ -2895,6 +2883,7 @@ div:nth-child(2n) > .Section6-Case {
   line-height: 1.6667rem;
   letter-spacing: 0.06rem;
   margin: 0 -2rem;
+  margin-top: 1rem;
 }
 
 .Section12-modalFormDescription {
@@ -2965,8 +2954,8 @@ div:nth-child(2n) > .Section6-Case {
 }
 
 .modalFormCloud {
-  width: 232px;
-  height: 194px;
+  width: 12.8889rem;
+  height: 10.7778rem;
   display: block;
   margin: auto;
   margin-top: 3.8333rem;

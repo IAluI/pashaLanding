@@ -29,11 +29,12 @@
 
 
 $( document ).ready(function() {
-  $('.Button').on('mousedown', function (e) {
+  var anyButton = $('.Button');
+  anyButton.on('mousedown', function (e) {
     $(e.currentTarget).children('.Button-Front').removeClass('Button-Elem_normal');
     $(e.currentTarget).children('.Button-Front').addClass('Button-Elem_clicked');
   });
-  $('.Button').on('mouseup', function (e) {
+  anyButton.on('mouseup', function (e) {
     $(e.currentTarget).children('.Button-Front').addClass('Button-Elem_normal');
     $(e.currentTarget).children('.Button-Front').removeClass('Button-Elem_clicked');
   });
@@ -104,7 +105,8 @@ $( document ).ready(function() {
     });
   })();
 
-  $('.Section6-Cases').slick({
+  var sec6Cases = $('.Section6-Cases');
+  sec6Cases.slick({
     infinite: false,
     arrows: false,
     slidesToShow: 2,
@@ -123,7 +125,7 @@ $( document ).ready(function() {
   $('.Section6-CasesArrow > button:last-child').click(function () {
     $('.Section6-Cases').slick('slickNext');
   });
-  $('.Section6-Cases').on('afterChange', function(event, slick, currentSlide){
+  sec6Cases.on('afterChange', function(event, slick, currentSlide){
     if (currentSlide == 0) {
       $('.Section6-CasesArrow > button:first-child').addClass('Section6-CasesArrow_disabled');
     } else {
@@ -136,7 +138,8 @@ $( document ).ready(function() {
     }
   });
 
-  $('.Section7-Cases').slick({
+  var sec7Cases = $('.Section7-Cases');
+  sec7Cases.slick({
     infinite: false,
     arrows: false,
     dots: false,
@@ -157,7 +160,7 @@ $( document ).ready(function() {
   $('.Section7-CasesArrow > button:last-child').click(function () {
     $('.Section7-Cases').slick('slickNext');
   });
-  $('.Section7-Cases').on('afterChange', function(event, slick, currentSlide){
+  sec7Cases.on('afterChange', function(event, slick, currentSlide){
     if (currentSlide == 0) {
       $('.Section7-CasesArrow > button:first-child').addClass('Section7-CasesArrow_disabled');
     } else {
@@ -170,62 +173,28 @@ $( document ).ready(function() {
     }
   });
 
-  /*$('.Section8-Cases').slick({
-   infinite: true,
-   arrows: false,
-   dots: false,
-   slidesToShow: 1,
-   adaptiveHeight: false,
-   fade: true,
-   responsive: [{
-   breakpoint: 992,
-   settings: {
-   slidesToShow: 1,
-   adaptiveHeight: false,
-   dots: true
-   }
-   }]
-   });
-
-   $('.Section8-CasesBottons').slick({
-   infinite: true,
-   arrows: false,
-   dots: false,
-   slidesToShow: 1,
-   adaptiveHeight: false,
-   fade: true,
-   responsive: [{
-   breakpoint: 992,
-   settings: {
-   slidesToShow: 1,
-   adaptiveHeight: false,
-   dots: true
-   }
-   }]
-   });*/
-
   var section8Cases = $('.Section8-Cases').children();
   var curCase = 0;
-  $('.Section8-CasesBottons').children().each(function (index, item) {
+  var sec7CasesButtons = $('.Section8-CasesBottons');
+  sec7CasesButtons.children().each(function (index, item) {
     $(item).click(function () {
       $(section8Cases[curCase]).removeClass('Section8-Case_active');
       curCase = index;
       $(section8Cases[curCase]).addClass('Section8-Case_active');
-      $('.Section8-CasesBottons').slick('slickGoTo', curCase);
+      sec7CasesButtons.slick('slickGoTo', curCase);
     });
   });
 
   var sec8SlickIsDestroyed = false;
-  $('.Section8-CasesBottons').on('destroy', function(event, slick){
+  sec7CasesButtons.on('destroy', function(event, slick){
     sec8SlickIsDestroyed = true;
-    console.log('slick destroyed')
   });
-  $('.Section8-CasesBottons').slick({
+  sec7CasesButtons.slick({
     mobileFirst: true,
     infinite: true,
     dots: true,
     appendDots: $('.Section8-SliderDots'),
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     responsive: [{
@@ -236,12 +205,12 @@ $( document ).ready(function() {
 
   $(window).resize($.debounce(250, function () {
     if (window.matchMedia('(max-width: 992px)').matches && sec8SlickIsDestroyed) {
-      $('.Section8-CasesBottons').slick({
+      sec7CasesButtons.slick({
         mobileFirst: true,
         infinite: true,
         dots: true,
         appendDots: $('.Section8-SliderDots'),
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         arrows: false,
         responsive: [{
@@ -252,32 +221,15 @@ $( document ).ready(function() {
       sec8SlickIsDestroyed = false;
     }
   }));
-  /*setTimeout(function () {
-   console.log($('.Section8-CasesBottons').slick({
-   mobileFirst: true,
-   infinite: true,
-   dots: true,
-   appendDots: $('.Section8-SliderDots'),
-   slidesToShow: 4,
-   slidesToScroll: 1,
-   arrows: false,
-   responsive: [{
-   breakpoint: 992,
-   settings: 'unslick'
-   }]
-   }));
-   console.log('ok');
-   }, 10000);*/
 
-
-  $('.Section8-CasesBottons').on('afterChange', function(event, slick, currentSlide){
+  sec7CasesButtons.on('afterChange', function(event, slick, currentSlide){
     $(section8Cases[curCase]).removeClass('Section8-Case_active');
     curCase = +currentSlide;
     $(section8Cases[curCase]).addClass('Section8-Case_active');
-    /*console.log(currentSlide)*/
   });
 
-  $('.Section9-Cases').slick({
+  var sec9Cases = $('.Section9-Cases');
+  sec9Cases.slick({
     infinite: false,
     slidesToShow: 3,
     arrows: false,
@@ -302,12 +254,12 @@ $( document ).ready(function() {
    }]*/
 
   $('.Section9-CasesArrow > button:first-child').click(function () {
-    $('.Section9-Cases').slick('slickPrev');
+    sec9Cases.slick('slickPrev');
   });
   $('.Section9-CasesArrow > button:last-child').click(function () {
-    $('.Section9-Cases').slick('slickNext');
+    sec9Cases.slick('slickNext');
   });
-  $('.Section9-Cases').on('afterChange', function(event, slick, currentSlide){
+  sec9Cases.on('afterChange', function(event, slick, currentSlide){
     if (currentSlide == 0) {
       $('.Section9-CasesArrow > button:first-child').addClass('Section9-CasesArrow_disabled');
     } else {

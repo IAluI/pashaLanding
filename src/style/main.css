@@ -138,9 +138,9 @@ body.compensate-for-scrollbar{overflow:hidden}.fancybox-active{height:auto}.fanc
   font-family: 'Gilroy';
   src: url('../fonts/Gilroy-Regular.eot');
   src: local('Gilroy Regular'), local('Gilroy-Regular'),
-    url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Gilroy-Regular.woff') format('woff'),
-    url('../fonts/Gilroy-Regular.ttf') format('truetype');
+  url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy-Regular.woff') format('woff'),
+  url('../fonts/Gilroy-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -160,9 +160,9 @@ body.compensate-for-scrollbar{overflow:hidden}.fancybox-active{height:auto}.fanc
   font-family: 'Gilroy';
   src: url('../fonts/Gilroy-SemiBold.eot');
   src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
-    url('../fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Gilroy-SemiBold.woff') format('woff'),
-    url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
+  url('../fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy-SemiBold.woff') format('woff'),
+  url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
@@ -171,9 +171,9 @@ body.compensate-for-scrollbar{overflow:hidden}.fancybox-active{height:auto}.fanc
   font-family: 'Gilroy';
   src: url('../fonts/Gilroy-ExtraBold.eot');
   src: local('Gilroy ExtraBold'), local('Gilroy-ExtraBold'),
-    url('../fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Gilroy-ExtraBold.woff') format('woff'),
-    url('../fonts/Gilroy-ExtraBold.ttf') format('truetype');
+  url('../fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy-ExtraBold.woff') format('woff'),
+  url('../fonts/Gilroy-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
@@ -182,10 +182,10 @@ body.compensate-for-scrollbar{overflow:hidden}.fancybox-active{height:auto}.fanc
   font-family: 'Muller';
   src: url('../fonts/MullerRegular.eot');
   src: local('Muller Regular'), local('Muller-Regular'),
-    url('../fonts/MullerRegular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MullerRegular.woff') format('woff'),
-    url('../fonts/MullerRegular.ttf') format('truetype'),
-    url('../fonts/MullerRegular.svg#MullerRegular') format('svg');
+  url('../fonts/MullerRegular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MullerRegular.woff') format('woff'),
+  url('../fonts/MullerRegular.ttf') format('truetype'),
+  url('../fonts/MullerRegular.svg#MullerRegular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -206,10 +206,10 @@ body.compensate-for-scrollbar{overflow:hidden}.fancybox-active{height:auto}.fanc
   font-family: 'Muller';
   src: url('../fonts/MullerBold.eot');
   src: local('Muller Bold'), local('Muller-Bold'),
-    url('../fonts/MullerBold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MullerBold.woff') format('woff'),
-    url('../fonts/MullerBold.ttf') format('truetype'),
-    url('../fonts/MullerBold.svg#MullerBold') format('svg');
+  url('../fonts/MullerBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MullerBold.woff') format('woff'),
+  url('../fonts/MullerBold.ttf') format('truetype'),
+  url('../fonts/MullerBold.svg#MullerBold') format('svg');
   font-weight: 700;
   font-style: normal;
 }
@@ -218,10 +218,10 @@ body.compensate-for-scrollbar{overflow:hidden}.fancybox-active{height:auto}.fanc
   font-family: 'Muller';
   src: url('../fonts/MullerExtraBold.eot');
   src: local('Muller ExtraBold'), local('Muller-ExtraBold'),
-    url('../fonts/MullerExtraBold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MullerExtraBold.woff') format('woff'),
-    url('../fonts/MullerExtraBold.ttf') format('truetype'),
-    url('../fonts/MullerExtraBold.svg#MullerExtraBold') format('svg');
+  url('../fonts/MullerExtraBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MullerExtraBold.woff') format('woff'),
+  url('../fonts/MullerExtraBold.ttf') format('truetype'),
+  url('../fonts/MullerExtraBold.svg#MullerExtraBold') format('svg');
   font-weight: 800;
   font-style: normal;
 }
@@ -230,10 +230,10 @@ body.compensate-for-scrollbar{overflow:hidden}.fancybox-active{height:auto}.fanc
   font-family: 'Muller';
   src: url('../fonts/MullerBlack.eot');
   src: local('Muller Black'), local('Muller-Black'),
-    url('../fonts/MullerBlack.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MullerBlack.woff') format('woff'),
-    url('../fonts/MullerBlack.ttf') format('truetype'),
-    url('../fonts/MullerBlack.svg#MullerBlack') format('svg');
+  url('../fonts/MullerBlack.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/MullerBlack.woff') format('woff'),
+  url('../fonts/MullerBlack.ttf') format('truetype'),
+  url('../fonts/MullerBlack.svg#MullerBlack') format('svg');
   font-weight: 900;
   font-style: normal;
 }
@@ -397,11 +397,37 @@ html {
     position: relative;
     line-height: 98px;
   }
+
+  .Header-Menu li a {
+    display: inline-block;
+  }
   .Header-Menu li:hover {
     color: #ffffff;
     background-color: #39acff;
   }
-  .Header-Menu li:hover:before {
+  .Header-Menu li a:before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 98px solid transparent;
+    border-left: 20px solid transparent;
+  }
+
+  .Header-Menu li a:after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 98px solid transparent;
+    border-right: 20px solid transparent;
+  }
+
+  .Header-Menu li:hover a:before {
     content: "";
     position: absolute;
     left: -20px;
@@ -411,7 +437,7 @@ html {
     border-bottom: 98px solid #39acff;
     border-left: 20px solid transparent;
   }
-  .Header-Menu li:hover:after {
+  .Header-Menu li:hover a:after {
     content: "";
     position: absolute;
     right: -20px;
@@ -427,12 +453,12 @@ html {
   .Header-Menu li {
     line-height: 110px;
   }
-  .Header-Menu li:hover:before {
+  .Header-Menu li:hover a:before {
     left: -1.5rem;
     border-bottom: 110px solid #39acff;
     border-left: 1.5rem solid transparent;
   }
-  .Header-Menu li:hover:after {
+  .Header-Menu li:hover a:after {
     right: -1.5rem;
     border-top: 110px solid #39acff;
     border-right: 1.5rem solid transparent;
@@ -467,11 +493,11 @@ html {
 }
 
 @media (min-width: 1200px) {
-  .Header-Menu li:hover:before {
+  .Header-Menu li:hover a:before {
     left: -2.5rem;
     border-left: 2.5rem solid transparent;
   }
-  .Header-Menu li:hover:after {
+  .Header-Menu li:hover a:after {
     right: -2.5rem;
     border-right: 2.5rem solid transparent;
   }
@@ -601,6 +627,7 @@ html {
     background: url('../img/Section1Background.png') center bottom no-repeat;
     border-bottom: 1px solid #e5e5e5;
     text-align: left;
+    background-size: cover;
   }
   .Section1-Header {
     margin-top: 13rem;
@@ -728,6 +755,14 @@ html {
 .Section2-QuestionsNo {
   width: 62px;
   height: 39px;
+  border-radius: 5px;
+}
+
+.Section2-GetResult {
+  font-size: 1.5rem;
+  display: none;
+  width: 15rem;
+  height: 4.8333rem;
   border-radius: 5px;
 }
 
@@ -1130,6 +1165,7 @@ html {
 .Section5 {
   text-align: center;
   background: url(../img/Section5Background.png) center bottom no-repeat;
+  background-size: cover;
 }
 
 .Section5-Header {
@@ -1155,7 +1191,7 @@ html {
 
 .Section5-DirectorContainer1 {
   width: 15.75rem;
-  height: 6.1667rem;
+  height: 9.1667rem;
   border-radius: 10px;
   padding: 0.4167rem;
   background-color: #ffffff;
@@ -1176,7 +1212,7 @@ html {
 
 .Section5-DirectorContainer2 {
   width: 14.75rem;
-  height: 5.1667rem;
+  height: 8.1667rem;
   border-radius: 10px;
   border: 1px solid #ececec;
   font-family: Muller;
@@ -1293,6 +1329,17 @@ html {
   margin-bottom: 2.75rem;
 }
 
+@keyframes skypeRoll {
+  from {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(3rem) rotate(360deg);
+  }
+  to {
+    transform: translateX(0) rotate(0deg);
+  }
+}
 @media (min-width: 992px) {
   .Section5 {
     /*background: url('../img/skypeIcon.png') right bottom no-repeat,
@@ -1314,9 +1361,9 @@ html {
   }
   .Section5-DirectorContainer1 {
     width: 18.4444rem;
-    height: 7.2222rem;
+    height: 9.2222rem;
     padding: 0.5rem;
-    margin-top: 3.4444rem;
+    margin-top: 1rem;
     margin-left: 0;
   }
   .Section5-DirectorContainer1:after {
@@ -1327,7 +1374,7 @@ html {
   }
   .Section5-DirectorContainer2 {
     width: 17.4444rem;
-    height: 6.2222rem;
+    height: 8.2222rem;
   }
   .Section5-DirectorName {
     font-size: 1.3333rem;
@@ -1366,6 +1413,7 @@ html {
     z-index: -1;
     width: 5.3889rem;
     height: 6.6667rem;
+    animation: skypeRoll 15s infinite;
   }
   .Section5-FormHeader {
     font-size: 1.5rem;
@@ -1520,7 +1568,7 @@ div:nth-child(2n) > .Section6-Case {
 
 @media (min-width: 992px) {
   .Section6 {
-    background: url(../img/Section6Background.png) calc(50% - 495px) 288px no-repeat;
+    background: url(../img/Section6Background.png) left 16rem no-repeat;
   }
   .Section6-Header {
     font-size: 1.6667rem;
@@ -1784,15 +1832,18 @@ div:nth-child(2n) > .Section6-Case {
 .Section8-CaseBottonContainer1 {
   /*width: 5.25rem;
   height: 4.5rem;*/
-  box-shadow: 0 2px 18px 3px rgba(0, 0, 0, 0.07);
+  /*box-shadow: 0 2px 18px 3px rgba(0, 0, 0, 0.07);
   border-radius: 5px;
-  background-color: #ffffff;
+  background-color: #ffffff;*/
   /*margin-bottom: 30px;*/
   padding: 0.4167rem;
   cursor: pointer;
 }
 
 .Section8-CaseBottonContainer2 {
+  /*display: flex;
+  flex-direction: column;
+  justify-content: space-around;*/
   width: 86%;
   height: 81.18%;
   border-radius: 5px;
@@ -1832,13 +1883,14 @@ div:nth-child(2n) > .Section6-Case {
   position: absolute;
   top: -15px;
   left: -15px;*/
-  width: 11.6667rem;
+  width: auto;
+  height: 8.375rem;
 }
 
 .Section8-CaseHeader {
   font-family: Muller;
   font-weight: 900;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-size: 0.75rem;
   line-height: 1.7617rem;
   letter-spacing: 0.0633rem;
@@ -1881,8 +1933,10 @@ div:nth-child(2n) > .Section6-Case {
 }
 
 .Section8-List {
-  padding-left: 5.4444rem;
+  padding-left: 3.4444rem;
   list-style: none;
+  /*margin: 0;*/
+  width: 100%;
 }
 
 .Section8-List_task {
@@ -1911,13 +1965,13 @@ div:nth-child(2n) > .Section6-Case {
   content: counter(taskCounter);
   counter-increment: taskCounter;
   position: absolute;
-  left: -54px;
-  top: -2px;
+  left: -3rem;
+  top: -0.1111rem;
   background-color: #39acff;
   color: #ffffff;
-  width: 18px;
-  height: 18px;
-  border-radius: 9px;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
   text-align: center;
   font-family: Muller;
   font-weight: 700;
@@ -1930,13 +1984,13 @@ div:nth-child(2n) > .Section6-Case {
   content: counter(soluCounter);
   counter-increment: soluCounter;
   position: absolute;
-  left: -54px;
-  top: -2px;
+  left: -3rem;
+  top: -0.1111rem;
   background-color: #39acff;
   color: #ffffff;
-  width: 18px;
-  height: 18px;
-  border-radius: 9px;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
   text-align: center;
   font-family: Muller;
   font-weight: 700;
@@ -1949,13 +2003,13 @@ div:nth-child(2n) > .Section6-Case {
   content: counter(resuCounter);
   counter-increment: resuCounter;
   position: absolute;
-  left: -54px;
-  top: -2px;
+  left: -3rem;
+  top: -0.1111rem;
   background-color: #39acff;
   color: #ffffff;
-  width: 18px;
-  height: 18px;
-  border-radius: 9px;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
   text-align: center;
   font-family: Muller;
   font-weight: 700;
@@ -1966,8 +2020,8 @@ div:nth-child(2n) > .Section6-Case {
 
 @media (min-width: 992px) {
   .Section8 {
-    background: url(../img/Section8Background1.png) calc(50% - 269px) bottom no-repeat,
-    url(../img/Section8Background2.png) calc(50% + 734px) 708px no-repeat;
+    background: url(../img/Section8Background1.png) left bottom no-repeat,
+      url(../img/Section8Background2.png) right 39rem no-repeat;
   }
   .Section8-Header {
     font-size: 1.6667rem;
@@ -1990,6 +2044,9 @@ div:nth-child(2n) > .Section6-Case {
     flex-direction: column;
   }
   .Section8-CaseBottonContainer1 {
+    box-shadow: 0 2px 18px 3px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+    background-color: #ffffff;
     height: 7.9444rem;
     width: 9.1667rem;
     border-radius: 10px;
@@ -2013,17 +2070,15 @@ div:nth-child(2n) > .Section6-Case {
     padding: 1.1111rem;
   }
   .Section8-CaseImg {
-    position: absolute;
+    /*position: absolute;
     top: 70px;
-    left: 0;
+    left: 0;*/
   }
   .Section8-CaseHeader {
-    text-align: right;
+    /*text-align: right;*/
     font-size: 1.0556rem;
     line-height: 2.5rem;
     letter-spacing: 0.0422rem;
-    margin-top: 1.6667rem;
-    margin-bottom: 11.0556rem;
     position: relative;
   }
   .Section8-ListsContainer {
@@ -2044,7 +2099,6 @@ div:nth-child(2n) > .Section6-Case {
     width: 10rem;
     margin-bottom: 1.7222rem;
   }
-
   .Section8-ListName:before {
     content: "";
     position: absolute;
@@ -2054,36 +2108,30 @@ div:nth-child(2n) > .Section6-Case {
     height: 0;
     border-top: 3px solid #147ecc;;
   }
-
   .Section8-List {
     margin: 0;
-    list-style-type: none;
+    /*list-style-type: none;*/
     /*padding-left: 98px;*/
   }
-
   .Section8-List_task {
     counter-reset: taskCounter;
   }
-
   .Section8-List_solution {
     counter-reset: soluCounter;
   }
-
   .Section8-List_result {
     counter-reset: resuCounter;
   }
-
   .Section8-ListItem {
     font-size: 1rem;
     line-height: 1.5556rem;
     letter-spacing: 0.04rem;
     padding-bottom: 1.5556rem;
   }
-
   .Section8-ListItem_task:before {
     position: absolute;
-    left: -54px;
-    top: -2px;
+    /*left: 3rem;
+    top: -0.1111rem;*/
     content: counter(taskCounter);
     counter-increment: taskCounter;
     width: 30px;
@@ -2098,11 +2146,10 @@ div:nth-child(2n) > .Section6-Case {
     line-height: 33px;
     letter-spacing: 0.64px;
   }
-
   .Section8-ListItem_solution:before {
     position: absolute;
-    left: -54px;
-    top: -2px;
+    /*left: 3rem;
+    top: -0.1111rem;*/
     content: counter(soluCounter);
     counter-increment: soluCounter;
     width: 30px;
@@ -2118,11 +2165,10 @@ div:nth-child(2n) > .Section6-Case {
     line-height: 33px;
     letter-spacing: 0.64px;
   }
-
   .Section8-ListItem_result:before {
     position: absolute;
-    left: -54px;
-    top: -2px;
+    /*left: 3rem;
+    top: -0.1111rem;*/
     content: counter(resuCounter);
     counter-increment: resuCounter;
     width: 30px;
@@ -2142,9 +2188,25 @@ div:nth-child(2n) > .Section6-Case {
 
 @media (min-width: 1200px) {
   .Section8-CaseImg {
+    position: absolute;
     top: 0;
-    width: 409px;
+    left: 0;
+    height: 14.5rem;
+    width: auto;
   }
+  .Section8-CaseImg_padding {
+    padding: 3.5rem;
+  }
+  .Section8-CaseHeader {
+    text-align: right;
+    margin-top: 1.6667rem;
+    margin-bottom: 11.0556rem;
+    padding-left: 14rem;
+  }
+  .Section8-List {
+    width: 80%;
+  }
+
 }
 
 .Section9 {
@@ -2398,7 +2460,6 @@ div:nth-child(2n) > .Section6-Case {
 
 .Section11 {
   text-align: center;
-  background: url(../img/Section11qMob.png) center bottom no-repeat;
 }
 .Section11 img {
   /*background: url(../img/Section11Background1.png) 17.3% 54% no-repeat;*/
@@ -2421,8 +2482,9 @@ div:nth-child(2n) > .Section6-Case {
 }
 
 .Section11-Questions {
+  margin-top: 1.5rem;
   text-align: left;
-  /*background: url(../img/Section11qMob.png) center bottom no-repeat;*/
+  background: url(../img/Section11qMob.png) center no-repeat;
 }
 
 .Section11-Question {
@@ -2482,9 +2544,6 @@ div:nth-child(2n) > .Section6-Case {
 }
 
 @media (min-width: 992px) {
-  .Section11 {
-    background: url(../img/Section11qMob.png) center bottom no-repeat;
-  }
   .Section11-Header {
     font-size: 1.6667rem;
     line-height: 2.5rem;
@@ -2493,6 +2552,15 @@ div:nth-child(2n) > .Section6-Case {
   .Section11-img {
     display: inline;
     margin-top: 3.8889rem;
+    display: flex;
+    align-items: center
+  }
+  .Section11-Questions {
+    background: url(../img/Section11qMob.png) center no-repeat;
+  }
+  .Section11-Question {
+    border-radius: 10px;
+    background-color: #ffffff;
   }
   .Section11-QuestionHeader:before {
     content: "";
@@ -2526,7 +2594,7 @@ div:nth-child(2n) > .Section6-Case {
 .BackgroundSection10_11 {
   background: url(../img/Section11Background2.png) no-repeat;
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: 95% bottom;
 }
 
 .Section12 {
@@ -2664,14 +2732,14 @@ div:nth-child(2n) > .Section6-Case {
 .modal {
   position: fixed;
   top: 10vh;
-  right: 0;
-  left: 0;
+  right: 5vh;
+  left: 5vh;
   bottom: 0;
-  padding: 0;
   margin: auto;
   z-index: 2000;
   display: none;
   max-width: 620px;
+  bottom: auto
 }
 
 .Section12-modalForm {
@@ -2901,11 +2969,16 @@ div:nth-child(2n) > .Section6-Case {
     position: relative;
     line-height: 98px;
   }
+
+  .footer-Menu li a{
+    display: inline-block;
+  }
+
   .footer-Menu li:hover {
     color: #ffffff;
     background-color: #39acff;
   }
-  .footer-Menu li:hover:before {
+  .footer-Menu li:hover a:before {
     content: "";
     position: absolute;
     left: -20px;
@@ -2915,7 +2988,17 @@ div:nth-child(2n) > .Section6-Case {
     border-bottom: 98px solid #39acff;
     border-left: 20px solid transparent;
   }
-  .footer-Menu li:hover:after {
+  .footer-Menu li a:before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 98px solid transparent;
+    border-left: 20px solid transparent;
+  }
+  .footer-Menu li:hover a:after {
     content: "";
     position: absolute;
     right: -20px;
@@ -2925,18 +3008,28 @@ div:nth-child(2n) > .Section6-Case {
     border-top: 98px solid #39acff;
     border-right: 20px solid transparent;
   }
+  .footer-Menu li a:after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 98px solid transparent;
+    border-right: 20px solid transparent;
+  }
 }
 
 @media (min-width: 992px) {
   .footer-Menu li {
     line-height: 110px;
   }
-  .footer-Menu li:hover:before {
+  .footer-Menu li:hover a:before {
     left: -1.5rem;
     border-bottom: 110px solid #39acff;
     border-left: 1.5rem solid transparent;
   }
-  .footer-Menu li:hover:after {
+  .footer-Menu li:hover a:after {
     right: -1.5rem;
     border-top: 110px solid #39acff;
     border-right: 1.5rem solid transparent;

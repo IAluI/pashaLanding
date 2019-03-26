@@ -1228,7 +1228,7 @@ html {
 }
 
 .Section5-DirectorPost {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 0.9167rem;
   line-height: 2.3333rem;
   letter-spacing: 0.0667rem;
@@ -2594,7 +2594,7 @@ div:nth-child(2n) > .Section6-Case {
 .BackgroundSection10_11 {
   background: url(../img/Section11Background2.png) no-repeat;
   background-repeat: no-repeat;
-  background-position: 95% bottom;
+  background-position: right bottom;
 }
 
 .Section12 {

@@ -327,6 +327,78 @@ $( document ).ready(function() {
     $(".Section12-modalForm").submit();
   });
 
+  (function () {
+    var scrollPos;
+
+    var step1 = $('.Section3-Step:nth-child(1)').offset().top;
+    //$('.Section3-Step:nth-child(1)').addClass('Section3-Step_hiden');
+    var step1Flag = true;
+    var step2 = $('.Section3-Step:nth-child(2)').offset().top;
+    //$('.Section3-Step:nth-child(2)').addClass('Section3-Step_hiden');
+    var step2Flag = true;
+    var step3 = $('.Section3-Step:nth-child(3)').offset().top;
+    //$('.Section3-Step:nth-child(3)').addClass('Section3-Step_hiden');
+    var step3Flag = true;
+    var step4 = $('.Section3-Step:nth-child(4)').offset().top;
+    //$('.Section3-Step:nth-child(4)').addClass('Section3-Step_hiden');
+    var step4Flag = true;
+    //console.log(step1,step2,step3,step4)
+
+    var gift = $('.Section10-Gift').offset().top;
+    var giftFlag = true;
+
+    var question = $('.Section11-img > img').offset().top;;
+    var questionFlag = true;
+
+    var delay;
+    $(window).scroll($.debounce(250, function (e) {
+      scrollPos = $(window).scrollTop() + $(window).height();
+      //console.log(scrollPos)
+
+      delay = 0;
+      if (scrollPos > step1 && step1Flag) {
+        step1Flag = false;
+        $('.Section3-Step:nth-child(1)').removeClass('Section3-Step_hiden');
+        //console.log('**1')
+        delay++;
+      }
+      if (scrollPos > step2 && step2Flag) {
+        step2Flag = false;
+        setTimeout(function () {
+          $('.Section3-Step:nth-child(2)').removeClass('Section3-Step_hiden');
+        }, 300 * delay);
+        //console.log('**2')
+        delay++;
+      }
+      if (scrollPos > step3 && step3Flag) {
+        step3Flag = false;
+        setTimeout(function () {
+          $('.Section3-Step:nth-child(3)').removeClass('Section3-Step_hiden');
+        }, 300 * delay);
+        //console.log('**3')
+        delay++;
+      }
+      if (scrollPos > step4 && step4Flag) {
+        step4Flag = false;
+        setTimeout(function () {
+          $('.Section3-Step:nth-child(4)').removeClass('Section3-Step_hiden');
+        }, 300 * delay);
+        //console.log('**4')
+      }
+
+      if (scrollPos > gift && giftFlag) {
+        giftFlag = false;
+        $('.Section10-Gift').removeClass('Section10-Gift_hiden');
+        //console.log('**4')
+      }
+
+      if (scrollPos > question && questionFlag) {
+        questionFlag = false;
+        $('.Section11-img > img').removeClass('Section11-img_hiden');
+        //console.log('**4')
+      }
+    }));
+  })();
 });
 
 function callModal(){

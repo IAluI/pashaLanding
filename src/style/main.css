@@ -827,6 +827,7 @@ html {
 }
 
 .Section3 {
+  overflow-x: hidden;
   text-align: center;
 }
 
@@ -860,6 +861,27 @@ html {
 .Section3-Step {
   position: relative;
   margin-bottom: 3rem;
+  transition: all 0.5s ease-out;
+}
+/*.Section3-Step:nth-child(1) {
+
+}
+.Section3-Step:nth-child(2) {
+  transition-delay: 0.3s;
+}
+.Section3-Step:nth-child(3) {
+  transition-delay: 0.6s;
+}
+.Section3-Step:nth-child(4) {
+  transition-delay: 0.9s;
+}*/
+
+.Section3-Step_hiden {
+  transform: translateX(-200%);
+}
+
+.Section3-Step_hiden:nth-child(2n) {
+  transform: translateX(200%);
 }
 
 .Section3-StepNum {
@@ -973,6 +995,11 @@ html {
     font-size: 1rem;
     line-height: 1.5556rem;
     letter-spacing: 0.04rem;
+  }
+}
+@media (min-width: 992px) {
+  .Section3-Step {
+    transition: all 1s ease-out;
   }
 }
 
@@ -1177,6 +1204,7 @@ html {
 }
 
 .Section5-DirectorContainer0 {
+  position: relative;
   padding: 0;
   height: 19.9167rem;
 }
@@ -1360,7 +1388,7 @@ html {
   }
   .Section5-DirectorContainer1:after {
     left: -19.0556rem;
-    bottom: -29.7222rem;
+    bottom: -28.7222rem;
     width: 32.5556rem;
     height: 40.5rem;
   }
@@ -2456,6 +2484,7 @@ div:nth-child(2n) > .Section6-Case {
 }
 
 .Section10 {
+  overflow-x: hidden;
   text-align: center;
 }
 
@@ -2487,6 +2516,11 @@ div:nth-child(2n) > .Section6-Case {
 .Section10-Gift {
   text-align: center;
   margin-top: 1rem;
+  transition: all 0.5s ease-out;
+}
+
+.Section10-Gift_hiden {
+  transform: translateX(200%);
 }
 
 .Section10-GiftImg {
@@ -2533,6 +2567,9 @@ div:nth-child(2n) > .Section6-Case {
 }*/
 
 @media (min-width: 992px) {
+  .Section10-Gift {
+    transition: all 1s ease-out;
+  }
   .Section10-Header {
     font-size: 1.6667rem;
     line-height: 2.5rem;
@@ -2575,6 +2612,7 @@ div:nth-child(2n) > .Section6-Case {
 }
 
 .Section11 {
+  overflow-x: hidden;
   text-align: center;
 }
 .Section11 img {
@@ -2585,6 +2623,14 @@ div:nth-child(2n) > .Section6-Case {
 
 .Section11-img {
   display: none;
+}
+
+.Section11-img > img {
+  transition: all 1s ease;
+}
+
+.Section11-img_hiden {
+  transform: translateX(-300%);
 }
 
 .Section11-Header {

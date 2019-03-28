@@ -351,7 +351,7 @@ $( document ).ready(function() {
     var questionFlag = true;
 
     var delay;
-    $(window).scroll($.debounce(250, function (e) {
+    $(window).scroll($.debounce(100, function (e) {
       scrollPos = $(window).scrollTop() + $(window).height();
       //console.log(scrollPos)
 

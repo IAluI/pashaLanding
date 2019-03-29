@@ -2287,18 +2287,22 @@ div:nth-child(2n) > .Section6-Case {
 }
 
 .Section8-1-Table > tbody td {
-  border: 1px solid #e5e5e5;
+  /*border: 1px solid #e5e5e5;*/
+  border: 1px solid #6f6f6f;
   padding: 1rem 1.5rem;
 }
 
 .Section8-1-Table > thead th {
   border-radius: 10px 10px 0 0;
+  border: 1px solid #ffffff;
+  border-bottom: none;
 }
 
 .Section8-1-Table > thead th:nth-child(2) {
   box-shadow: inset 0 1px 0 0 #6f6f6f,
     inset -1px 0 0 #6f6f6f,
     inset 1px 0 0 #6f6f6f;
+  border-left: none;
 }
 
 .Section8-1-Table > thead th:nth-child(3) {
@@ -2307,6 +2311,25 @@ div:nth-child(2n) > .Section6-Case {
 }
 
 .Section8-1-Table > thead th:nth-child(4) {;
+  background-color: #ffdd23;
+}
+
+.Section8-1-Table > tbody td:nth-child(2) {
+ /* box-shadow: inset 0 1px 0 0 #6f6f6f,
+  inset -1px 0 0 #6f6f6f,
+  inset 1px 0 0 #6f6f6f;*/
+}
+
+.Section8-1-Table > tbody td:nth-child(3) {
+  color: #ffffff;
+  background-color: #33a5f7;
+}
+
+.Section8-1-Table > tbody td:nth-child(4) {;
+  background-color: #ffdd23;
+}
+
+.Section8-1-Table > tbody td:nth-child(5) {;
   background-color: #ffdd23;
 }
 
@@ -2341,6 +2364,15 @@ div:nth-child(2n) > .Section6-Case {
   border-bottom: none;
 }
 
+.Section8-1-Table > tbody > tr:first-child td:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+.Section8-1-Table > tbody > tr:last-child td:last-child {
+  border-radius: 0 0 10px 0;
+}
+
+
 .Section8-1-Table > tbody td:nth-child(4) {
   border-right: none;
 }
@@ -2357,7 +2389,7 @@ div:nth-child(2n) > .Section6-Case {
   .Section8-1-Table > tbody > tr:last-child {
     font-size: 1em;
   }
-  .Section8-1-Table>tbody td {
+  .Section8-1-Table > tbody td {
     padding: 0.5rem 0.75rem;
   }
 }
@@ -3385,3 +3417,41 @@ div:nth-child(2n) > .Section6-Case {
   }
 }
 
+.Map {
+  position: relative;
+  box-shadow: 0 3px 13px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.Map-Description {
+  position: absolute;
+  top: 7%;
+  left: 16%;
+  box-shadow: 0 3px 13px 3px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  font-family: Muller;
+  font-size: 0.75rem;
+}
+
+.Map-DescriptionHeader {
+  font-weight: 800;
+  font-size: 1.5em;
+  line-height: 1.6667em;
+  letter-spacing: 0.06em;
+}
+
+.Map-DescriptionText {
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 2.5em;
+  letter-spacing: 0.04em;
+}
+
+@media (min-width: 1200px) {
+  .Map-Description {
+    font-size: 1rem;
+  }
+}

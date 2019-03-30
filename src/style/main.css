@@ -2329,16 +2329,16 @@ div:nth-child(2n) > .Section6-Case {
   background-color: #ffdd23;
 }
 
-.Section8-1-Table > tbody td:nth-child(5) {;
+/*.Section8-1-Table > tbody td:nth-child(5) {;
   background-color: #ffdd23;
-}
+}*/
 
-.Section8-1-Table td:last-child {
+/*.Section8-1-Table td:last-child {
   width: 5px;
   border-right: none;
   border-left: none;
   padding: 0;
-}
+}*/
 
 .Section8-1-Table > tbody {
   box-shadow: 0 3px 13px 3px rgba(0, 0, 0, 0.08);
@@ -2364,9 +2364,9 @@ div:nth-child(2n) > .Section6-Case {
   border-bottom: none;
 }
 
-.Section8-1-Table > tbody > tr:first-child td:last-child {
+/*.Section8-1-Table > tbody > tr:first-child td:last-child {
   border-radius: 0 10px 0 0;
-}
+}*/
 
 .Section8-1-Table > tbody > tr:last-child td:last-child {
   border-radius: 0 0 10px 0;

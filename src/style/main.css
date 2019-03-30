@@ -2299,10 +2299,11 @@ div:nth-child(2n) > .Section6-Case {
 }
 
 .Section8-1-Table > thead th:nth-child(2) {
-  box-shadow: inset 0 1px 0 0 #6f6f6f,
+  /*box-shadow: inset 0 1px 0 0 #6f6f6f,
     inset -1px 0 0 #6f6f6f,
     inset 1px 0 0 #6f6f6f;
-  border-left: none;
+  border-left: none;*/
+  background-color: #f7f5f5;
 }
 
 .Section8-1-Table > thead th:nth-child(3) {
@@ -2318,6 +2319,7 @@ div:nth-child(2n) > .Section6-Case {
  /* box-shadow: inset 0 1px 0 0 #6f6f6f,
   inset -1px 0 0 #6f6f6f,
   inset 1px 0 0 #6f6f6f;*/
+  background-color: #f7f5f5;
 }
 
 .Section8-1-Table > tbody td:nth-child(3) {

@@ -2288,13 +2288,13 @@ div:nth-child(2n) > .Section6-Case {
 
 .Section8-1-Table > tbody td {
   /*border: 1px solid #e5e5e5;*/
-  border: 1px solid #6f6f6f;
+  border-bottom: 1px solid #b7b7b7;
   padding: 1rem 1.5rem;
 }
 
 .Section8-1-Table > thead th {
   border-radius: 10px 10px 0 0;
-  border: 1px solid #ffffff;
+  /*border: 1px solid #ffffff;*/
   border-bottom: none;
 }
 

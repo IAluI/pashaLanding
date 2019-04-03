@@ -1357,7 +1357,20 @@ html {
   line-height: 1.2408rem;
   letter-spacing: 0.0692rem;
   margin-top: 2.4167rem;
-  margin-bottom: 2.75rem;
+  /*margin-bottom: 2.75rem;*/
+}
+
+.Section5-FormAccept {
+  display: block;
+  margin: auto;
+  width: 83.3%;
+  opacity: 0.6;
+  font-family: Gilroy;
+  font-size: .8889rem;
+  line-height: 1.5556rem;
+  letter-spacing: .0356rem;
+  margin-top: 1.9444rem;
+  padding-bottom: 2.75rem;
 }
 
 @keyframes skypeRoll {
@@ -1478,7 +1491,7 @@ html {
     line-height: 1.3072rem;
     letter-spacing: 0.0478rem;
     margin-top: 3.3333rem;
-    margin-bottom: 3.6111rem;
+    /*margin-bottom: 3.6111rem;*/
   }
 }
 
@@ -1539,7 +1552,7 @@ html {
 }
 
 .Section6-CaseContainer {
-
+  outline: none;
 }
 
 .Section6-Case {
@@ -2933,6 +2946,16 @@ div:nth-child(2n) > .Section6-Case {
   padding: 1.75rem 6.5rem;
   border-radius: 10px;
   margin-top: 42px;
+}
+
+.Section12-FormAccept {
+  opacity: 0.6;
+  font-family: Gilroy;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  margin-top: 1.9444rem;
+  margin-bottom: 0;
 }
 
 @media (min-width: 992px) {

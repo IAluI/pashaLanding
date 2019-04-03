@@ -355,7 +355,11 @@ $( document ).ready(function() {
       scrollPos = $(window).scrollTop() + $(window).height();
       //console.log(scrollPos)
 
-      delay = 0;
+      if (window.matchMedia('(min-width: 768px)').matches) {
+        delay = 0;
+      } else {
+        delay = -100;
+      }
       if (scrollPos > step1 && step1Flag) {
         step1Flag = false;
         $('.Section3-Step:nth-child(1)').removeClass('Section3-Step_hiden');

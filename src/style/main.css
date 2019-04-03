@@ -1407,7 +1407,7 @@ html {
     width: 18.4444rem;
     height: 9.2222rem;
     padding: 0.5rem;
-    margin-top: 1rem;
+    margin-top: 8.4rem;
     margin-left: 0;
   }
   .Section5-DirectorContainer1:after {
@@ -2599,6 +2599,7 @@ div:nth-child(2n) > .Section6-Case {
 .Section10-Gift {
   text-align: center;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   transition: all 0.5s ease-out;
 }
 
@@ -2691,6 +2692,12 @@ div:nth-child(2n) > .Section6-Case {
     width: 11.6667rem;
     height: 7.4444rem;
     transform: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Section10-GiftText:before {
+    bottom: 4rem;
   }
 }
 

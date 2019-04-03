@@ -3130,9 +3130,17 @@ div:nth-child(2n) > .Section6-Case {
   display: none;
 }
 
+.footer-Policy {
+  display: none;
+}
+
+.footer-Yur {
+  display: none;
+}
+
 .footer-Contacts {
   text-align: right;
-  padding-top: 1.8333rem;
+  /*padding-top: 1.8333rem;*/
   line-height: 1.1111rem;
 }
 
@@ -3170,8 +3178,10 @@ div:nth-child(2n) > .Section6-Case {
   height: 20px;
   background: url('../img/phoneIcon.png') left bottom no-repeat;
   position: absolute;
-  right: 130px;
-  top: 18px;
+  /*right: 130px;
+  top: 18px;*/
+  right: 11rem;
+  top: 0;
 }
 
 @media (min-width: 576px) {
@@ -3193,13 +3203,23 @@ div:nth-child(2n) > .Section6-Case {
     padding-right: 0.7222rem;
     letter-spacing: 0.025rem;
   }
-  .footer-Callback {
-    right: 10rem;
-    top: 1.7143rem;
-  }
 }
 
 @media (min-width: 768px) {
+  .footer-Policy {
+    display: inline;
+    font-family: Gilroy;
+    font-size: 0.6666rem;
+    font-weight: 400;
+    letter-spacing: 0.0611rem;
+  }
+  .footer-Yur {
+    display: inline;
+    font-family: Gilroy;
+    font-size: 0.6666rem;
+    font-weight: 400;
+    letter-spacing: 0.0611rem;
+  }
   .footer-Menu {
     list-style: none;
     margin: 0;
@@ -3272,6 +3292,9 @@ div:nth-child(2n) > .Section6-Case {
     border-top: 98px solid transparent;
     border-right: 20px solid transparent;
   }
+  .footer-Callback {
+    right: 10rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -3292,15 +3315,26 @@ div:nth-child(2n) > .Section6-Case {
     display: none;
   }
   .footer-ContactsContainer {
-    position: absolute;
+    /*position: absolute;
     right: 0;
-    bottom: 33%;
+    bottom: 33%;*/
   }
+}
+
+@media (min-width: 1200px) {
   .footer-CallbackContainer {
     display: block;
     height: 6.1111rem;
     /*text-align: right;*/
     line-height: 7.2777rem;
+  }
+  .footer-Menu li:hover:before {
+    left: -2.5rem;
+    border-left: 2.5rem solid transparent;
+  }
+  .footer-Menu li:hover:after {
+    right: -2.5rem;
+    border-right: 2.5rem solid transparent;
   }
   .footer-Callback {
     position: static;
@@ -3314,17 +3348,6 @@ div:nth-child(2n) > .Section6-Case {
     width: calc(100% + 15px);
     height: 2.1111rem;
     border-radius: 0.2777rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .footer-Menu li:hover:before {
-    left: -2.5rem;
-    border-left: 2.5rem solid transparent;
-  }
-  .footer-Menu li:hover:after {
-    right: -2.5rem;
-    border-right: 2.5rem solid transparent;
   }
 }
 
@@ -3445,7 +3468,7 @@ div:nth-child(2n) > .Section6-Case {
 .Map {
   position: relative;
   box-shadow: 0 3px 13px 3px rgba(0, 0, 0, 0.08);
-  border-radius: 10px;
+  /*border-radius: 10px;*/
   background-color: #ffffff;
 }
 

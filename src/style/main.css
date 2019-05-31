@@ -3009,9 +3009,10 @@ div:nth-child(2n) > .Section6-Case {
 }
 
 .modal > * {
+  position: absolute;
   top: 10vh;
-  right: 5vh;
-  left: 5vh;
+  right: 2vh;
+  left: 2vh;
   margin: auto;
   max-width: 620px;
   max-height: 85vh;
@@ -3020,8 +3021,8 @@ div:nth-child(2n) > .Section6-Case {
 }
 
 .Section12-modalForm {
-  position: relative;
-  width: 100%;
+  /*position: absolute;*/
+  /*width: 100%;*/
   box-shadow: 0 3px 13px 3px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
   background-color: #ffffff;
@@ -3105,9 +3106,9 @@ div:nth-child(2n) > .Section6-Case {
 }
 
 .formSubmited {
-  position: relative;
+  /*position: relative;*/
   display: none;
-  width: 100%;
+  /*width: 100%;*/
   box-shadow: 0 3px 13px 3px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
   background-color: #ffffff;

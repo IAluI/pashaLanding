@@ -434,6 +434,7 @@ function submitForm() {
     data: th.serialize()
   }).done(function() {
     modalSubmited();
+    dataLayer.push({'event': 'otpravka_form'});
     setTimeout(function() {
       // Done Functions
       th.trigger("reset");

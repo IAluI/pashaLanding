@@ -2377,6 +2377,12 @@ div:nth-child(2n) > .Section6-Case {
   letter-spacing: 0.0556rem;
 }
 
+.Section8-1-Table > tbody > tr:first-child {
+  font-weight: 700;
+  font-size: 1.3889rem;
+  letter-spacing: 0.0556rem;
+}
+
 .Section8-1-Table td:first-child {
   text-align: left;
   border-left: none;
@@ -2413,6 +2419,9 @@ div:nth-child(2n) > .Section6-Case {
     overflow-x: auto;*/
   }
   .Section8-1-Table > tbody > tr:last-child {
+    font-size: 1em;
+  }
+  .Section8-1-Table > tbody > tr:first-child {
     font-size: 1em;
   }
   .Section8-1-Table > tbody td {

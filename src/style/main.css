@@ -541,6 +541,17 @@ html {
   text-align: center;
 }
 
+.Button-Elem > button {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: #ffffff;
+}
+
 .Button-Elem_normal {
   bottom: 0;
   background-image: linear-gradient(to top, #147ecc 0%, #39acff 100%);

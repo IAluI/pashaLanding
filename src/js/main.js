@@ -310,22 +310,22 @@ $( document ).ready(function() {
   $('.Section12-modalFormClose').click(closeModal);
 
   $(".Section5-Form").submit(submitForm);
-  $('.Section5-FormSubmit').click(function (e) {
-    e.preventDefault();
+  /*$('.Section5-FormSubmit').click(function (e) {
+    //e.preventDefault();
     $(".Section5-Form").submit();
-  });
+  });*/
 
   $(".Section12-ContentForm").submit(submitForm);
-  $('.Section12-ContentFormSubmit').click(function (e) {
-    e.preventDefault();
+  /*$('.Section12-ContentFormSubmit').click(function (e) {
+    //e.preventDefault();
     $(".Section12-ContentForm").submit();
-  });
+  });*/
 
   $(".Section12-modalForm").submit(submitForm);
-  $('.Section12-modalFormSubmit').click(function (e) {
-    e.preventDefault();
+  /*$('.Section12-modalFormSubmit').click(function (e) {
+    //e.preventDefault();
     $(".Section12-modalForm").submit();
-  });
+  });*/
 
   (function () {
     var scrollPos;
@@ -422,12 +422,11 @@ function modalSubmited() {
   $('.formSubmited').css('display', 'block');
 }
 
-
-
-function submitForm() {
+function submitForm(e) {
   var th = $(this);
   /*modalSubmited();
-   console.log(th.serialize());*/
+  console.log(th.children('[required]')[0].value);
+  console.log(th.children('[required]')[1].value);*/
   $.ajax({
     type: "POST",
     url: "mail.php", //Change

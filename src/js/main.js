@@ -405,7 +405,7 @@ $( document ).ready(function() {
   })();
 });
 
-function callModal(){
+function callModal() {
   $('.modal').css('display', 'block');
   $('.bg-modal').css('display', 'block');
 }
@@ -418,6 +418,7 @@ function closeModal() {
 }
 
 function modalSubmited() {
+  callModal();
   $('.Section12-modalForm').hide();
   $('.formSubmited').css('display', 'block');
 }
@@ -425,8 +426,7 @@ function modalSubmited() {
 function submitForm(e) {
   var th = $(this);
   /*modalSubmited();
-  console.log(th.children('[required]')[0].value);
-  console.log(th.children('[required]')[1].value);*/
+  console.log(th.children('[required]')[0].value);*/
   $.ajax({
     type: "POST",
     url: "mail.php", //Change
